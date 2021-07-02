@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="V2 Regression Tests">
+    <listeners>
+        <listener class-name="listeners.RetryAnnotationTransformer"/>
+        <!--<listener class-name="listeners.TestStatusReportGenerator"/>-->
+    </listeners>
+    <test name="Check SCM Status" enabled="true" parallel="classes">
+        <classes>
+            <class name="utilities.SCMStatusReporter"/>
+        </classes>
+    </test>
+</suite>

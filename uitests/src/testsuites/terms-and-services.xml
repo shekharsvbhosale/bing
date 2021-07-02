@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="V2 Terms and Services Validation">
+    <parameter name="browser" value="edge"/>
+    <parameter name="appURL" value="https://v2.emboldct.dev"/>
+    <test name="Embold Terms and Service Validation">
+        <classes>
+            <class name="config.BeginTestExecution"/>
+            <class name="termsandservice.TermsAndServicePageTests"/>
+            <class name="config.EndTestExecution"/>
+        </classes>
+    </test>
+</suite>

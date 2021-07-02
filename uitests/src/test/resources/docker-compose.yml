@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+  allure-ui:
+    image: "frankescobar/allure-docker-service-ui"
+    user: 1000:1000
+    environment:
+      ALLURE_DOCKER_PUBLIC_API_URL: "http://192.168.2.24:5050"
+      ALLURE_DOCKER_PUBLIC_API_URL_PREFIX: ""
+      URL_PREFIX: "/v2"
+    ports:
+      - "7744:5252"
+
+  allure:
+    image: "frankescobar/allure-docker-service"
+    user: 1000:1000
+    environment:
+      CHECK_RESULTS_EVERY_SECONDS: NONE
+      KEEP_HISTORY: 1
+      KEEP_HISTORY_LATEST: 12
+      SECURITY_USER: shekhar
+      SECURITY_PASS: omgshekhar
+      SECURITY_VIEWER_USER: "redstar"
+      SECURITY_VIEWER_PASS: "redstar"
+      SECURITY_ENABLED: 1
+      MAKE_VIEWER_ENDPOINTS_PUBLIC: 0
+      EMAILABLE_REPORT_TITLE: "Regression Tests"
+      ACCESS_TOKEN_EXPIRES_IN_DAYS: 1
+      REFRESH_TOKEN_EXPIRES_IN_DAYS: 1
+      URL_PREFIX: "/v2"
+      SERVER_URL: "http://192.168.2.24:7744/v2/allure-docker-service-ui/projects/default/reports/latest"
+    ports:
+      - "5050:5050"
+    volumes:
+      - ${TEST_ROOT}/allure-results:/app/allure-results
+      - ${TEST_ROOT}/allure-reports:/app/default-reports

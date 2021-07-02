@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Embold V2" parallel="true">
+
+    <!--To DO: This has to be done with separate Test suite which
+    contains independent modules.
+    -->
+
+    <test name="Sign In Validations - Chrome">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="appURL" value="https://app.gamma-staging.com"/>
+        <classes>
+            <class name="signin.EmboldSignInPageTests"/>
+        </classes>
+    </test>
+
+    <test name="Sign In Validations - Firefox">
+        <parameter name="browser" value="firefox"/>
+        <parameter name="appURL" value="https://app.gamma-staging.com"/>
+        <classes>
+            <class name="signin.EmboldSignInPageTests"/>
+        </classes>
+    </test>
+
+    <test name="Sign In Validations - MSEdge">
+        <parameter name="browser" value="edge"/>
+        <parameter name="appURL" value="https://app.gamma-staging.com"/>
+        <classes>
+            <class name="signin.EmboldSignInPageTests"/>
+        </classes>
+    </test>
+</suite>

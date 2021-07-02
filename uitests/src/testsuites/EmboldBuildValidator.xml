@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="V2 Regression Tests">
+    <listeners>
+        <listener class-name="listeners.RetryAnnotationTransformer"/>
+        <!--<listener class-name="listeners.TestStatusReportGenerator"/>-->
+    </listeners>
+    <test name="Prepare Test Environment">
+        <classes>
+            <class name="config.BeginTestExecution"/>
+        </classes>
+    </test>
+    <test name="Validate Builds" enabled="true" parallel="classes">
+        <parameter name="branch" value="${branch}"/>
+        <classes>
+            <class name="config.ValidateBuilds"/>
+        </classes>
+    </test>
+    <test name="Terminate Execution">
+        <classes>
+            <class name="config.EndTestExecution"/>
+        </classes>
+    </test>
+</suite>

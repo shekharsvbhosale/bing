@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration packages="src.main.java.utilities.MSTeamsAppender" status="INFO">
+    <Properties>
+        <Property name="baseDir">./logs</Property>
+        <Property name="error">error</Property>
+        <Property name="info">info</Property>
+    </Properties>
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+        <Autologs name="MSTeams">
+            <ThresholdFilter level="INFO" onMatch="ACCEPT" onMismatch="DENY"/>
+        </Autologs>
+        <RollingFile name="InfoRollingFile" fileName="${baseDir}/${info}.log" immediateFlush="false"
+                     append="true" filePattern="${baseDir}/archives/${info}-%d{yyyy-MM-dd}-%i.gz">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="20 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+        <RollingFile name="ErrorRollingFile" fileName="${baseDir}/${error}.log" immediateFlush="false"
+                     append="true" filePattern="${baseDir}/archives/${error}-%d{yyyy-MM-dd}-%i.gz">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="20 MB"/>
+            </Policies>
+            <DefaultRolloverStrategy max="10"/>
+        </RollingFile>
+
+    </Appenders>
+    <Loggers>
+        <Root level="INFO">
+            <!--Intentionally kept separate appenders for info and error logs-->
+            <AppenderRef ref="InfoRollingFile" level="info"/>
+            <AppenderRef ref="ErrorRollingFile" level="error"/>
+            <AppenderRef ref="Console"/>
+            <!--Do not set MSTeams appender level to info. It may cause HTTP error 429 for Webhook service-->
+            <AppenderRef ref="MSTeams" level="error"/>
+        </Root>
+    </Loggers>
+
+</Configuration>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="V2 Regression Tests">
+    <listeners>
+        <listener class-name="listeners.RetryAnnotationTransformer"/>
+        <!--<listener class-name="listeners.TestStatusReportGenerator"/>-->
+    </listeners>
+    <test name="Prepare Test Environment">
+        <classes>
+            <class name="config.BeginTestExecution"/>
+        </classes>
+    </test>
+    <test name="GitHub Validation">
+        <classes>
+            <class name="signin.EmboldSignInWithGitHub"/>
+            <class name="repositorylist.RepositoryListPageTests"/>
+            <class name="signout.EmboldSignOut"/>
+        </classes>
+    </test>
+    <test name="Terminate Execution">
+        <classes>
+            <class name="config.EndTestExecution"/>
+        </classes>
+    </test>
+</suite>

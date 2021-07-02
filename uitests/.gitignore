@@ -1,0 +1,7 @@
+/target/
+/.allure/
+/.idea/
+/allure-results/
+/uitests.iml
+/uitests.ipr
+/uitests.iws

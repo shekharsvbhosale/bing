@@ -1,0 +1,39 @@
+version: '3'
+
+services:
+  allure-docker-service-ui:
+    build:
+      context: ../allure-docker-service-ui
+      dockerfile: docker/Dockerfile
+      args:
+        BUILD_DATE: "na"
+        VERSION: "na"
+        VCS_REF: "na"
+    environment:
+      ALLURE_DOCKER_PUBLIC_API_URL: "http://localhost:5050"
+      ALLURE_DOCKER_PUBLIC_API_URL_PREFIX: ""
+    ports:
+      - "7474:5252"
+
+  allure:
+    image: "frankescobar/allure-docker-service"
+    environment:
+      CHECK_RESULTS_EVERY_SECONDS: NONE
+      KEEP_HISTORY: 1
+      KEEP_HISTORY_LATEST: 12
+      SECURITY_USER: ${ghuser}
+      SECURITY_PASS: ${ghpass}
+      SECURITY_VIEWER_USER: "redstar"
+      SECURITY_VIEWER_PASS: "redstar"
+      SECURITY_ENABLED: 1
+      MAKE_VIEWER_ENDPOINTS_PUBLIC: 0
+      EMAILABLE_REPORT_TITLE: "Embold V2 Regression Tests"
+      #URL_PREFIX: /my-prefix
+      #ACCESS_TOKEN_EXPIRES_IN_SECONDS: 10
+      #REFRESH_TOKEN_EXPIRES_IN_SECONDS: 10
+    ports:
+      - "5050:5050"
+    volumes:
+      - D:/Shekhar-Acellere/Automation/redstar/allure-results:/app/allure-results
+      - D:/Shekhar-Acellere/Automation/redstar/allure-reports:/app/default-reports
+      - D:/Shekhar-Acellere/Automation/redstar/projects:/app/projects

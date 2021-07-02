@@ -1,0 +1,27 @@
+version: 1
+# Sources mention which Files/Dirs to be taken for Analysis
+sources:
+  # Default Directory will be Current Directory for the yaml file. Once can specify the absolute path
+  basedir: '.'
+  files:
+    # Default will be all Files in the base Dir
+    - path: '*'
+    # One can specify the relative path with respect to the Base Dir
+    #- path: 'org/jedit/core/JavaFileFromOtherPath.java'
+  #Files to be Excluded are mentioned in exclusions as per language
+  exclusions:
+    - 'generated'
+    - 'mock'
+    - 'thirdparty'
+    - 'third-party'
+    - '3rd-party'
+    - '3rdparty'
+    - 'external'
+    - 'build'
+    - 'node_modules'
+    - 'assets'
+    - 'gulp'
+    - 'grunt'
+    - 'library'
+    - 'libs'
+    - '.git'

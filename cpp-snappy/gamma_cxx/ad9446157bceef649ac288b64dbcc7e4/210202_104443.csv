@@ -1,0 +1,57 @@
+snappy-c.h,40,low,"inclusion of deprecated C++ header 'stddef.h'; consider using 'cstddef' instead",hicpp-deprecated-headers
+snappy.h,42,low,"inclusion of deprecated C++ header 'stddef.h'; consider using 'cstddef' instead",hicpp-deprecated-headers
+snappy.h,43,low,"inclusion of deprecated C++ header 'stdint.h'; consider using 'cstdint' instead",hicpp-deprecated-headers
+snappy-sinksource.h,32,low,"inclusion of deprecated C++ header 'stddef.h'; consider using 'cstddef' instead",hicpp-deprecated-headers
+snappy-sinksource.cc,29,low,"inclusion of deprecated C++ header 'stddef.h'; consider using 'cstddef' instead",hicpp-deprecated-headers
+snappy-stubs-internal.h,38,low,"inclusion of deprecated C++ header 'stdint.h'; consider using 'cstdint' instead",hicpp-deprecated-headers
+snappy-stubs-internal.h,420,low,"multiple declarations in a single statement reduces readability",readability-isolate-declaration
+snappy-stubs-internal.h,422,low,"GammaContext:{\"synopsis\":\"avoid using 'goto' for flow control\",\"trace\":[{\"description\":\"label defined here\",\"file\":\"snappy-stubs-internal.h\",\"line\":432}]}",hicpp-avoid-goto
+snappy-stubs-internal.h,424,low,"GammaContext:{\"synopsis\":\"avoid using 'goto' for flow control\",\"trace\":[{\"description\":\"label defined here\",\"file\":\"snappy-stubs-internal.h\",\"line\":432}]}",hicpp-avoid-goto
+snappy-stubs-internal.h,426,low,"GammaContext:{\"synopsis\":\"avoid using 'goto' for flow control\",\"trace\":[{\"description\":\"label defined here\",\"file\":\"snappy-stubs-internal.h\",\"line\":432}]}",hicpp-avoid-goto
+snappy-stubs-internal.h,428,low,"GammaContext:{\"synopsis\":\"avoid using 'goto' for flow control\",\"trace\":[{\"description\":\"label defined here\",\"file\":\"snappy-stubs-internal.h\",\"line\":432}]}",hicpp-avoid-goto
+snappy-stubs-internal.h,430,low,"GammaContext:{\"synopsis\":\"avoid using 'goto' for flow control\",\"trace\":[{\"description\":\"label defined here\",\"file\":\"snappy-stubs-internal.h\",\"line\":432}]}",hicpp-avoid-goto
+snappy-stubs-internal.cc,37,low,"do not declare C-style arrays, use std::array<> instead",cppcoreguidelines-avoid-c-arrays
+snappy-internal.h,170,low,"do not use inline assembler in safety-critical code",hicpp-no-assembler
+snappy-internal.h,201,low,"do not use inline assembler in safety-critical code",hicpp-no-assembler
+snappy-internal.h,277,low,"do not declare C-style arrays, use std::array<> instead",cppcoreguidelines-avoid-c-arrays
+snappy.cc,86,low,"Avoid using global variables",global-variable
+snappy.cc,138,low,"Avoid using global variables",global-variable
+snappy.cc,140,low,"do not declare C-style arrays, use std::array<> instead",cppcoreguidelines-avoid-c-arrays
+snappy.cc,182,low,"do not declare C-style arrays, use std::array<> instead",cppcoreguidelines-avoid-c-arrays
+snappy.cc,191,low,"do not declare C-style arrays, use std::array<> instead",cppcoreguidelines-avoid-c-arrays
+snappy.cc,690,low,"integer literal has suffix 'u', which is not uppercase",readability-uppercase-literal-suffix
+snappy.cc,980,low,"do not declare C-style arrays, use std::array<> instead",cppcoreguidelines-avoid-c-arrays
+snappy.cc,1118,low,"GammaContext:{\"synopsis\":\"avoid using 'goto' for flow control\",\"trace\":[{\"description\":\"label defined here\",\"file\":\"snappy.cc\",\"line\":1107}]}",hicpp-avoid-goto
+snappy.cc,1143,low,"GammaContext:{\"synopsis\":\"avoid using 'goto' for flow control\",\"trace\":[{\"description\":\"label defined here\",\"file\":\"snappy.cc\",\"line\":1107}]}",hicpp-avoid-goto
+snappy.cc,1175,low,"do not declare C-style arrays, use std::array<> instead",cppcoreguidelines-avoid-c-arrays
+snappy.cc,1254,low,"GammaContext:{\"synopsis\":\"avoid using 'goto' for flow control\",\"trace\":[{\"description\":\"label defined here\",\"file\":\"snappy.cc\",\"line\":1350}]}",hicpp-avoid-goto
+snappy.cc,1266,low,"GammaContext:{\"synopsis\":\"avoid using 'goto' for flow control\",\"trace\":[{\"description\":\"label defined here\",\"file\":\"snappy.cc\",\"line\":1350}]}",hicpp-avoid-goto
+snappy.cc,1285,low,"integer literal has suffix 'u', which is not uppercase",readability-uppercase-literal-suffix
+snappy.cc,1317,low,"GammaContext:{\"synopsis\":\"avoid using 'goto' for flow control\",\"trace\":[{\"description\":\"label defined here\",\"file\":\"snappy.cc\",\"line\":1350}]}",hicpp-avoid-goto
+snappy.cc,1319,low,"GammaContext:{\"synopsis\":\"avoid using 'goto' for flow control\",\"trace\":[{\"description\":\"label defined here\",\"file\":\"snappy.cc\",\"line\":1350}]}",hicpp-avoid-goto
+snappy.cc,1326,low,"GammaContext:{\"synopsis\":\"avoid using 'goto' for flow control\",\"trace\":[{\"description\":\"label defined here\",\"file\":\"snappy.cc\",\"line\":1350}]}",hicpp-avoid-goto
+snappy.cc,1338,low,"GammaContext:{\"synopsis\":\"avoid using 'goto' for flow control\",\"trace\":[{\"description\":\"label defined here\",\"file\":\"snappy.cc\",\"line\":1350}]}",hicpp-avoid-goto
+snappy.cc,1346,low,"GammaContext:{\"synopsis\":\"avoid using 'goto' for flow control\",\"trace\":[{\"description\":\"label defined here\",\"file\":\"snappy.cc\",\"line\":1350}]}",hicpp-avoid-goto
+snappy.cc,1470,low,"do not declare C-style arrays, use std::array<> instead",cppcoreguidelines-avoid-c-arrays
+snappy.cc,1600,low,"method 'GetOutputPtr' can be made static",readability-convert-member-functions-to-static
+snappy.cc,1601,low,"method 'GetBase' can be made static",readability-convert-member-functions-to-static
+snappy.cc,1602,low,"method 'SetOutputPtr' can be made static",readability-convert-member-functions-to-static
+snappy.cc,1650,low,"integer literal has suffix 'u', which is not uppercase",readability-uppercase-literal-suffix
+snappy.cc,1860,low,"method 'GetBase' can be made static",readability-convert-member-functions-to-static
+snappy.cc,1873,low,"method 'TryFastAppend' can be made static",readability-convert-member-functions-to-static
+snappy.cc,1886,low,"integer literal has suffix 'u', which is not uppercase",readability-uppercase-literal-suffix
+snappy.cc,2083,low,"integer literal has suffix 'u', which is not uppercase",readability-uppercase-literal-suffix
+snappy.cc,2113,low,"method 'Allocate' can be made static",readability-convert-member-functions-to-static
+snappy.cc,2124,low,"method 'Flush' can be made static",readability-convert-member-functions-to-static
+snappy.cc,2137,low,"member variable 'data' has public visibility",misc-non-private-member-variables-in-classes
+snappy.cc,2138,low,"member variable 'size' has public visibility",misc-non-private-member-variables-in-classes
+snappy_benchmark.cc,84,low,"do not declare C-style arrays, use std::array<> instead",cppcoreguidelines-avoid-c-arrays
+snappy_benchmark.cc,84,low,"member variable 'zcontents' has public visibility",misc-non-private-member-variables-in-classes
+snappy_benchmark.cc,85,low,"do not declare C-style arrays, use std::array<> instead",cppcoreguidelines-avoid-c-arrays
+snappy_benchmark.cc,85,low,"member variable 'sizes' has public visibility",misc-non-private-member-variables-in-classes
+snappy_benchmark.cc,86,low,"member variable 'max_size' has public visibility",misc-non-private-member-variables-in-classes
+snappy_benchmark.cc,167,low,"do not declare C-style arrays, use std::array<> instead",cppcoreguidelines-avoid-c-arrays
+snappy_compress_fuzzer.cc,31,low,"inclusion of deprecated C++ header 'stddef.h'; consider using 'cstddef' instead",hicpp-deprecated-headers
+snappy_compress_fuzzer.cc,32,low,"inclusion of deprecated C++ header 'stdint.h'; consider using 'cstdint' instead",hicpp-deprecated-headers
+snappy_uncompress_fuzzer.cc,31,low,"inclusion of deprecated C++ header 'stddef.h'; consider using 'cstddef' instead",hicpp-deprecated-headers
+snappy_uncompress_fuzzer.cc,32,low,"inclusion of deprecated C++ header 'stdint.h'; consider using 'cstdint' instead",hicpp-deprecated-headers

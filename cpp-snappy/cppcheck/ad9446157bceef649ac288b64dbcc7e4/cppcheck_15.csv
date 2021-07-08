@@ -1,0 +1,5 @@
+D:\Shekhar-Acellere\Github-Repos\strict-mode\snappy\snappy-sinksource.h;34;error;Code 'namespacesnappy{' is invalid C code. Use --std or --language to configure the language.;syntaxError
+D:\Shekhar-Acellere\Github-Repos\strict-mode\snappy\snappy.h;49;error;Code 'namespacesnappy{' is invalid C code. Use --std or --language to configure the language.;syntaxError
+;;information;Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information.;toomanyconfigs
+D:\Shekhar-Acellere\Github-Repos\strict-mode\snappy\snappy-stubs-internal.h;117;error;Code 'namespacesnappy{' is invalid C code. Use --std or --language to configure the language.;syntaxError
+;;information;Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information.;toomanyconfigs

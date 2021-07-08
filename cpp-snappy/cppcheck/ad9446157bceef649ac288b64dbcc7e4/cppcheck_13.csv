@@ -1,0 +1,4 @@
+D:\Shekhar-Acellere\Github-Repos\strict-mode\snappy\snappy.cc;1190;warning;Member variable 'SnappyDecompressor::ip_limit_min_maxtaglen_' is not initialized in the constructor.;uninitMemberVar
+D:\Shekhar-Acellere\Github-Repos\strict-mode\snappy\snappy.cc;1190;warning;Member variable 'SnappyDecompressor::scratch_' is not initialized in the constructor.;uninitMemberVar
+D:\Shekhar-Acellere\Github-Repos\strict-mode\snappy\snappy.cc;1960;warning;Member variable 'snappy :: SnappyScatteredWriter < SnappySinkAllocator >::expected_' is not initialized in the constructor.;uninitMemberVar
+;;information;Too many #ifdef configurations - cppcheck only checks 12 configurations. Use --force to check all configurations. For more details, use --enable=information.;toomanyconfigs

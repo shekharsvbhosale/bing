@@ -1,0 +1,2521 @@
+commitId:ea368c2f07de5f31146a10214f27d15091b09771
+date:2020-12-16_19:28:23
+subject:Add AppVeyor status badge.
+author:Victor Costan
+
+1	0	README.md
+
+commitId:d1d1f48604b72ff1c56b984065a80fd3d252cfc4
+date:2020-12-16_19:28:12
+subject:Remove unused include in snappy_benchmark.cc.
+author:Victor Costan
+
+3	2	snappy_benchmark.cc
+
+commitId:4ebd8b2f23dd4ab67ca695256a128cd796d39ce6
+date:2020-12-16_19:09:56
+subject:Split benchmarks and test tools into separate targets.
+author:Victor Costan
+
+1	0	.appveyor.yml
+1	0	.travis.yml
+404	372	CMakeLists.txt
+21	23	README.md
+0	3	cmake/config.h.in
+329	0	snappy_benchmark.cc
+57	0	snappy_test_data.cc
+68	0	snappy_test_data.h
+461	0	snappy_test_tool.cc
+8	664	snappy_unittest.cc
+ create mode 100644 snappy_benchmark.cc
+ create mode 100644 snappy_test_data.cc
+ create mode 100644 snappy_test_data.h
+ create mode 100644 snappy_test_tool.cc
+
+commitId:0793e2ae2d51640ae569b75ffb42fc444afafb32
+date:2020-12-16_03:02:51
+subject:Merge pull request #117 from cmumford:disable-osx-fuzzer
+author:Victor Costan
+
+commitId:ac55f842f7d4c663fb90132c4d551ce4dc744410
+date:2020-12-16_02:58:39
+subject:Test stub improvements.
+author:Victor Costan
+
+38	20	snappy-test.cc
+64	92	snappy-test.h
+
+commitId:6e9ae724234d9fc3dddfdb7f5c5bffb44d201507
+date:2020-12-15_17:10:14
+subject:Disable fuzzing on OSX.
+author:Chris Mumford
+
+2	1	.travis.yml
+
+commitId:402d88812c39db90a30387640cd13db291b33bad
+date:2020-12-15_12:01:28
+subject:Fixup for adding the third_party/{benchmark, googletest} submodules. (#115)
+author:Victor Costan
+
+1	0	third_party/benchmark
+1	0	third_party/googletest
+ create mode 160000 third_party/benchmark
+ create mode 160000 third_party/googletest
+
+commitId:6badb0a2614627b078c78b75017ce9ed9fb49e17
+date:2020-12-15_19:49:13
+subject:Merge pull request #114 from cmumford:werror-only-clang
+author:Victor Costan
+
+commitId:bc53daa7be553889c7a3d6c6c35f0e7b752dbab7
+date:2020-12-15_11:19:53
+subject:Fixed endif clause.
+author:Chris Mumford
+
+1	1	CMakeLists.txt
+
+commitId:e9a6a08439684aa74c222d89819bf741743073bd
+date:2020-12-15_11:17:28
+subject:Matching clang.
+author:Chris Mumford
+
+1	2	CMakeLists.txt
+
+commitId:955a5dd1b3f632394e3fe6bbd6a3442af0795e25
+date:2020-12-15_11:02:17
+subject:Building with `-Werror` only with clang.
+author:Chris Mumford
+
+7	4	CMakeLists.txt
+
+commitId:42d1dd7ea3f7a4bf6f91fb6e197715ec89d82e8f
+date:2020-12-15_09:16:39
+subject:Fix CHECK_EQ to call ok() instead of CheckSuccess().
+author:Chris Mumford
+
+1	1	snappy-test.cc
+1	1	snappy-test.h
+
+commitId:eaaa0ed0caf37294451fde65d72fc4bab68aef55
+date:2020-12-15_08:49:01
+subject:Fixup for adding the third_party/{benchmark, googletest} submodules. (#111)
+author:Victor Costan
+
+1	0	third_party/benchmark
+1	0	third_party/googletest
+ create mode 160000 third_party/benchmark
+ create mode 160000 third_party/googletest
+
+commitId:e1e91ee464373e0bba4aadfbd3d88a6d84dc5b95
+date:2020-12-15_06:21:47
+subject:Rework file:: stubs.
+author:Victor Costan
+
+60	0	snappy-test.cc
+32	49	snappy-test.h
+
+commitId:6aa79cb4712e2b0b3afbac9471d222e7c7b5d359
+date:2020-12-15_06:18:35
+subject:Wrap snappy_unittest in an anonymous namespace and remove static from functions.
+author:Victor Costan
+
+25	31	snappy_unittest.cc
+0	1	third_party/benchmark
+0	1	third_party/googletest
+ delete mode 160000 third_party/benchmark
+ delete mode 160000 third_party/googletest
+
+commitId:bae9f9bef880a8c84a59acf273a8235d10da4449
+date:2020-12-14_20:27:33
+subject:Fixup for adding the third_party/{benchmark, googletest} submodules. (#110)
+author:Victor Costan
+
+1	0	third_party/benchmark
+1	0	third_party/googletest
+ create mode 160000 third_party/benchmark
+ create mode 160000 third_party/googletest
+
+commitId:5f913be04ec45257102f36cfd3ff74e6e313f95a
+date:2020-12-15_04:14:46
+subject:Fix unused local variable warnings.
+author:Victor Costan
+
+14	2	snappy.cc
+
+commitId:549685a5987203ab4e94ce6ba964d3cb716951e1
+date:2020-12-14_21:27:31
+subject:Remove custom testing and benchmarking code.
+author:Victor Costan
+
+6	0	.gitmodules
+28	7	CMakeLists.txt
+6	0	NEWS
+6	9	README.md
+0	185	snappy-test.cc
+4	128	snappy-test.h
+104	104	snappy_unittest.cc
+ create mode 100644 .gitmodules
+
+commitId:11f9a77a2f3bd3923b6118b0aba741f628373a8b
+date:2020-12-14_09:40:22
+subject:Add Travis-CI build status badge to README.md.
+author:Chris Mumford
+
+1	0	README.md
+
+commitId:49540965a392793bd62bad506788830d9180df5e
+date:2020-12-14_09:11:46
+subject:Update Travis CI config.
+author:Victor Costan
+
+5	5	.travis.yml
+
+commitId:8995ffabb99e8a064a72540cc3c1dbbbcc1da092
+date:2020-12-14_09:59:34
+subject:Replace #pragma nounroll with equivalent used elsewhere.
+author:Victor Costan
+
+6	2	snappy.cc
+
+commitId:d1daa830445cf4873f66d522233ce2e4c8022d2d
+date:2020-12-14_09:59:23
+subject:Remove inline qualifier from static variables.
+author:Victor Costan
+
+4	4	snappy.cc
+
+commitId:3b571656fa4d73a5f6d21629a041b867045d5d49
+date:2020-12-14_02:48:03
+subject:1) Improve the lookup table data to require less instructions to extract the necessary data. We now store len - offset in a signed int16, this happens to remove masking offset in the calculations and the calculations that need to be done precisely give the flags that we need for testing correctness. 2) Replace offset extraction with a lookup mask. This is less uops and is needed because we need to special case type 3 to always return 0 as to properly trigger the fallback. 3) Unroll the loop twice, this removes some loop-condition checks AND it improves the generated assembly. The loop variables tend to end up in a different register requiring mov's having two consecutive copies allows the elision of the mov's.
+author:Snappy Team
+
+186	124	snappy.cc
+2	2	snappy_unittest.cc
+
+commitId:a9730ed50526b714eff8731066a70006cf816420
+date:2020-12-14_02:47:49
+subject:Optimize zippy decompression by making IncrementalCopy faster.
+author:Shahriar Rouf
+
+226	58	snappy.cc
+41	0	snappy_unittest.cc
+
+commitId:56c2c247d037ce4b274c93e4bb638662cb79378a
+date:2020-12-03_22:52:52
+subject:Internal change
+author:Snappy Team
+
+56	224	snappy.cc
+
+commitId:a94be58e65dac5d676c219199b015cfc32d7ae6e
+date:2020-12-03_22:52:41
+subject:Optimize zippy decompression by making IncrementalCopy faster.
+author:Shahriar Rouf
+
+224	56	snappy.cc
+
+commitId:01a566f825e6083318bda85c862c859e198bd98a
+date:2020-11-19_17:06:26
+subject:Fix opensource version
+author:Snappy Team
+
+3	3	CMakeLists.txt
+3	0	cmake/config.h.in
+37	34	snappy.cc
+6	7	snappy_unittest.cc
+
+commitId:616b8229b68e609c9252e24f8bc4d499497613ab
+date:2020-11-18_23:22:04
+subject:Add LZ4 as a benchmark option. Snappy is starting to look really good compared to LZ4. LZ4 is considered the fastest solution by many on internet. We now see that Snappy is actually becoming very competitive with compression a little faster and decompression slower but certainly not terribly slower.
+author:Snappy Team
+
+4	0	CMakeLists.txt
+4	0	snappy-test.h
+37	9	snappy_unittest.cc
+
+commitId:e4a6e97b91da8109840b59697a3b77f93ade956c
+date:2020-11-18_23:21:55
+subject:Extend validate benchmarks over all types and also add a medley for validation.
+author:Snappy Team
+
+36	15	snappy_unittest.cc
+
+commitId:719bed0ae21071963ab6e8cc09c51e88212cbcb0
+date:2020-11-18_23:21:47
+subject:Bug fix. Error on 0 offset copies.
+author:Snappy Team
+
+2	0	snappy.cc
+
+commitId:289c8a3c0a06451316da8d5e74daeb972ec69c4d
+date:2020-11-18_23:21:38
+subject:Make zippy decompression branchless
+author:Snappy Team
+
+4	2	snappy-internal.h
+206	4	snappy.cc
+
+commitId:3bfa265a04da212cfcb6cc7acf4868647860579e
+date:2020-11-18_23:21:30
+subject:Revert zippy optimization that causes heap buffer overflows.
+author:Snappy Team
+
+54	140	snappy.cc
+
+commitId:4d2dc9dcbb4c4c68872e9a2952426dd7dee91e56
+date:2020-11-18_23:21:21
+subject:Optimize zippy unzipping by upto >10% by making IncrementalCopy faster.
+author:Shahriar Rouf
+
+140	54	snappy.cc
+
+commitId:11e5165b98c32038fad44ee282619484ed3b80da
+date:2020-11-18_23:21:12
+subject:Add a benchmark that decreased the branch prediction memorization by increasing the amount of independent branches executed per benchmark iteration.
+author:Snappy Team
+
+27	0	snappy_unittest.cc
+
+commitId:6835abd953cd66c6cf7716dd8347e9c5f245662a
+date:2020-11-18_23:20:58
+subject:Change hash function for Compress.
+author:Luca Versari
+
+10	12	snappy.cc
+
+commitId:368b01c8dd29fee6c00775800ec7c2b792ad5482
+date:2020-11-03_20:51:55
+subject:Merge pull request #107 from jsteemann:bug-fix/fix-compile-warning
+author:Victor Costan
+
+commitId:1ce58af28e46872d003f3a38213815595f387a39
+date:2020-11-03_20:30:24
+subject:Fix the use of op + len when op is nullptr and len is non-zero. See https://reviews.llvm.org/D67122 for some discussion of why this can matter. I don't think this should have any noticeable effect on performance.
+author:Snappy Team
+
+2	3	snappy.cc
+
+commitId:0b990db2b80a5c4522de441a28cce2cd10be382d
+date:2020-11-03_20:30:11
+subject:Run clang-format
+author:Luca Versari
+
+58	89	snappy.cc
+
+commitId:cb2b3c7ec6e527624834358762d6ee318e3383bc
+date:2020-10-29_21:50:50
+subject:fix compile warnings due to missing override specifiers
+author:jsteemann
+
+7	7	snappy-sinksource.h
+
+commitId:7ffaf77cf488261bab3561089e311e00b258e175
+date:2020-10-07_21:12:27
+subject:Replace ARCH_K8 with __x86_64__.
+author:Chris Kennelly
+
+1	1	snappy-internal.h
+1	3	snappy-stubs-internal.h
+
+commitId:4dd277fed475de4898e0eea12124e14033636041
+date:2020-07-11_01:54:52
+subject:Replace the division with a constant table in IncrementalCopy
+author:Snappy Team
+
+4	1	snappy.cc
+
+commitId:f16eda3466633b88d0a55199deb00aa5429c6219
+date:2020-06-01_23:46:44
+subject:Correct uninitialized variable.
+author:Snappy Team
+
+2	1	snappy.cc
+
+commitId:837f38b3e0cae01ccd5021b176509cb72eb25d81
+date:2020-05-06_16:07:47
+subject:Revise stubs for ARCH_{K8,PPC,ARM}.
+author:Victor Costan
+
+4	10	snappy-stubs-internal.h
+
+commitId:e1353b9fa8d72539f2d14cdba7f056a8c4c25ccc
+date:2020-05-05_20:18:12
+subject:Remove ARCH_* guards around Bits::FindLSBSetNonZero64().
+author:Victor Costan
+
+29	24	snappy-stubs-internal.h
+
+commitId:c98344f6260d24d921e5e04006d4bedb528f404a
+date:2020-05-05_16:15:02
+subject:Fix Clang/GCC compilation warnings.
+author:Victor Costan
+
+43	0	CMakeLists.txt
+23	7	snappy-sinksource.cc
+22	22	snappy-stubs-internal.h
+2	2	snappy-test.h
+45	16	snappy.cc
+6	6	snappy_unittest.cc
+
+commitId:113cd97ab38d6515d4431d22a7cd2c9fe5215edb
+date:2020-05-04_12:32:00
+subject:Tighten types on a few for loops.
+author:Victor Costan
+
+5	6	snappy.cc
+50	45	snappy_unittest.cc
+
+commitId:abde3abb1f4b17ac554a81b5ce133107b4830d02
+date:2020-04-30_02:09:07
+subject:Fix Travis CI build.
+author:Victor Costan
+
+10	6	.travis.yml
+
+commitId:e6506681fa644c9f7149e9b58a2ee3b7336b0b22
+date:2020-04-30_01:19:26
+subject:Fix accidental double std:: qualifiers.
+author:Victor Costan
+
+1	1	snappy-test.h
+
+commitId:63620c06d20f4ccac6e5c85c607f4e8698428ec8
+date:2020-04-29_22:31:55
+subject:Add some std:: qualifiers to types and functions.
+author:Victor Costan
+
+7	7	snappy-test.cc
+27	25	snappy-test.h
+14	14	snappy_unittest.cc
+
+commitId:5417da69b7e150bcfb9c18304c0aa95d8caf7f34
+date:2020-04-29_19:38:03
+subject:Switch from C headers to C++ headers.
+author:Victor Costan
+
+1	1	snappy-sinksource.cc
+4	5	snappy-stubs-internal.h
+2	3	snappy-test.h
+1	2	snappy.cc
+3	2	snappy.h
+3	2	snappy_compress_fuzzer.cc
+3	2	snappy_uncompress_fuzzer.cc
+2	2	snappy_unittest.cc
+
+commitId:251d935d5096da77c4fef26ea41b019430da5572
+date:2020-04-14_16:50:30
+subject:Remove #include <string> from snappy-stubs-public.h.
+author:Victor Costan
+
+0	1	snappy-stubs-public.h.in
+
+commitId:4f195aee43abf1321c50094dfcba5d914a4aad72
+date:2020-04-14_00:38:04
+subject:Remove mismatched #endif.
+author:Victor Costan
+
+0	2	snappy-stubs-internal.h
+
+commitId:041c608086d00ceb8285b91f034cfa8b84c83d7c
+date:2020-04-14_00:22:20
+subject:Remove platform-dependent code for unaligned loads/stores.
+author:Victor Costan
+
+18	110	snappy-stubs-internal.h
+
+commitId:27ff130ff90f167bb55cd62089e2fe5d678c59b6
+date:2020-04-13_22:30:59
+subject:Remove platform-dependent code for little-endian loads and stores.
+author:Victor Costan
+
+0	2	CMakeLists.txt
+0	6	cmake/config.h.in
+58	99	snappy-stubs-internal.h
+
+commitId:a4cdb5d133cddee7fc79847f019ea1d4c2f6625e
+date:2020-04-13_19:51:05
+subject:Introduce SNAPPY_ATTRIBUTE_ALWAYS_INLINE.
+author:Victor Costan
+
+7	0	CMakeLists.txt
+3	0	cmake/config.h.in
+8	1	snappy-stubs-internal.h
+1	1	snappy.cc
+
+commitId:231b8be07655f6d887dde850c85fa3c64eacc0ee
+date:2020-04-12_20:10:03
+subject:Migrate to standard integral types.
+author:Victor Costan
+
+24	23	snappy-internal.h
+1	1	snappy-stubs-internal.cc
+76	74	snappy-stubs-internal.h
+0	10	snappy-stubs-public.h.in
+9	9	snappy-test.cc
+2	2	snappy-test.h
+51	51	snappy.cc
+2	1	snappy.h
+26	26	snappy_unittest.cc
+
+commitId:14bef6629050a8ddf474c7ddeb4fabacc0157d8a
+date:2020-04-12_00:06:15
+subject:Modernize memcpy() and memmove() usage.
+author:Victor Costan
+
+4	3	snappy-sinksource.cc
+9	8	snappy-stubs-internal.h
+23	21	snappy.cc
+1	1	snappy_unittest.cc
+
+commitId:d674348a0c127e23b753fffa2ff87808a9fc5e74
+date:2020-04-11_04:41:15
+subject:Improve zippy with 5-10%.
+author:Snappy Team
+
+59	15	snappy-internal.h
+31	16	snappy.cc
+
+commitId:4dfcad9f4e7e3ee0a226758e3b8ebc5b57098dbe
+date:2020-04-11_04:41:07
+subject:assertion failure on darwin_x86_64, have to investigage
+author:Snappy Team
+
+50	11	snappy-internal.h
+16	9	snappy.cc
+2	1	snappy_unittest.cc
+
+commitId:e19178748f6dd4bb9380b69efd95ab104ed24d0f
+date:2020-04-11_04:40:57
+subject:assertion failure on darwin_x86_64, have to investigage
+author:Snappy Team
+
+11	49	snappy-internal.h
+9	16	snappy.cc
+1	2	snappy_unittest.cc
+
+commitId:0faf56378eb5fab1bbf598d55114be7a57b70de8
+date:2020-04-11_04:40:48
+subject:This cl does two things 1) It shaves of a few cycles from the data dependency chain. By using "shrd" instead of a load. 2) The important loop is finding small copies (4-12) which are either "copy 1", or "copy 2" depending if the offset fits <2048. It turns out that this is a branch that is mispredicted often. Due to the long dependency chain the CPU is running with IPC~1 anyway so we can freely add instructions to instead emit copies branchfree. This reduces the branch misspredicts from 15% to 11% (for BM_ZFlat/6 txt1) and from 5.6% to 4% (for BM_ZFlat/10 or pb).
+author:Snappy Team
+
+49	11	snappy-internal.h
+16	9	snappy.cc
+2	1	snappy_unittest.cc
+
+commitId:0c7ed08a254001a71dd7847cdbc32e89f2dcc81d
+date:2020-04-11_04:40:39
+subject:The result on protobuf benchmark is around 19%. Results vary by their propensity for compression. As the frequency of finding matches influences the amount of branch misspredicts and the amount of hashing.
+author:Snappy Team
+
+14	0	snappy-stubs-internal.h
+47	69	snappy.cc
+
+commitId:3c77e0145993725d79ede2f4c1fe4962860b6f12
+date:2020-04-11_04:40:29
+subject:1) Make the output pointer a local variable such it doesn't need a load add store on it's loop carried dependency chain. 2) Reduce the input pointer loop carried dependency chain from 7 cycles to 4 cycles by using pre-loading. This is a very subtle point. 3) Just brutally copy 64 bytes which removes a difficult to predict branch from the inner most loop. There is enough bandwidth to do so in the intrinsic cycles of the loop. 4) Implement limit pointers that include the slop region. This removes unnecessary instructions from the hot path. 5) It seems the removal of the difficult to predict branch has removed the code sensitivity to alignment, so remove the asm nop's.
+author:Snappy Team
+
+167	113	snappy.cc
+
+commitId:9eabb7baba8fb9181cffc75031b4d6c5447425a5
+date:2020-04-11_04:40:20
+subject:Cut a load from the critical dependency chain of the input pointer by speculating the uncommon case of COPY_4 is not happening.
+author:Snappy Team
+
+37	14	snappy.cc
+
+commitId:cddd9c0875e55c9c212802b0fc8082d5b3889edd
+date:2020-04-11_04:40:09
+subject:Improve comments in IncrementalCopy, add an assert.
+author:Snappy Team
+
+6	3	snappy.cc
+
+commitId:537f4ad6240e586970fe554614542e9717df7902
+date:2020-01-14_10:58:53
+subject:Tag open source release 1.1.8.
+author:Victor Costan
+
+1	1	CMakeLists.txt
+8	0	NEWS
+
+commitId:b5477a8457a42c10c3fffb5851cd0ef09caabb50
+date:2020-01-14_10:58:42
+subject:Optimize IncrementalCopy: There are between 1 and 4 copy iterations. Allow FDO to work with full knowledge of the probabilities for each branch.
+author:Snappy Team
+
+19	23	snappy.cc
+
+commitId:f5acee902c4d2110f671455460172cb6d3bf5b73
+date:2019-11-11_12:05:59
+subject:Move CI to Visual Studio 2019.
+author:Victor Costan
+
+9	8	.appveyor.yml
+
+commitId:26410cc4f8b5bfe666a94231733f212a2de0b5de
+date:2019-11-10_14:10:50
+subject:Merge pull request #85 from bitomaxsp:patch-1
+author:Victor Costan
+
+commitId:0eec45ed163a6907dbc56683e8c5afdab8b8d24e
+date:2019-11-07_22:39:04
+subject:Align CMake configuration with related projects.
+author:Victor Costan
+
+68	29	CMakeLists.txt
+0	1	cmake/SnappyConfig.cmake
+33	0	cmake/SnappyConfig.cmake.in
+ delete mode 100644 cmake/SnappyConfig.cmake
+ create mode 100644 cmake/SnappyConfig.cmake.in
+
+commitId:6617df53fa6afb624eb5276d03bf7f3097c0b2ae
+date:2019-11-05_16:35:29
+subject:Remove redundant PROJECT_SOURCE_DIR usage from CMake config.
+author:Victor Costan
+
+16	16	CMakeLists.txt
+
+commitId:f48c38f91a581173cc0c49a2db38f41516e65639
+date:2019-11-04_00:09:19
+subject:Fix one forgotten instance of StringPrintf -> StrFormat.
+author:Victor Costan
+
+1	1	snappy_unittest.cc
+
+commitId:c9212708b251a5b49ade2389d6a9315f1dd8e736
+date:2019-11-03_23:24:02
+subject:Fix build errors.
+author:Victor Costan
+
+7	6	snappy-test.cc
+1	1	snappy-test.h
+8	7	snappy_unittest.cc
+
+commitId:eb2eb73e6bc4a56888eb24f45ae9d35fdb21e271
+date:2019-11-03_21:51:20
+subject:Test CMake installation on Travis.
+author:Victor Costan
+
+2	0	.travis.yml
+
+commitId:8f32e3fbc08a30e81fcfb2d5698d19ef3cdbe887
+date:2019-11-03_21:51:08
+subject:Internal changes
+author:Snappy Team
+
+6	6	snappy_unittest.cc
+
+commitId:38945971d693250badd5faafd214bae3585971c9
+date:2019-10-17_14:17:49
+subject:Allow build with different standard if lib used as a subproject
+author:Dmitry
+
+7	4	CMakeLists.txt
+
+commitId:e9e11b84e629c3e06fbaa4f0a86de02ceb9d6992
+date:2019-09-29_20:39:28
+subject:Fix Travis CI build.
+author:Victor Costan
+
+10	9	.travis.yml
+3	3	CMakeLists.txt
+
+commitId:9dabbca0067f796d3eb0f663c84a2eb02f6f7725
+date:2019-09-28_09:04:06
+subject:Remove snappy::string alias to std::string.
+author:Victor Costan
+
+0	2	snappy-stubs-public.h.in
+
+commitId:62363d9a797e4c6607193cb14000cd3a7705c185
+date:2019-09-26_10:57:29
+subject:Fully qualify std::string.
+author:Victor Costan
+
+0	0	opensource/.gitignore => .gitignore
+1	1	snappy-stubs-internal.cc
+3	3	snappy-stubs-internal.h
+11	11	snappy-test.cc
+8	8	snappy-test.h
+3	2	snappy.cc
+6	5	snappy.h
+87	88	snappy_unittest.cc
+ rename opensource/.gitignore => .gitignore (100%)
+
+commitId:d837d5cfe1bf7b0eb52220428bc3541025db86cb
+date:2019-08-21_09:11:04
+subject:Merge pull request #80 from tmm1:patch-2
+author:Victor Costan
+
+commitId:44d84addf2a1f84f4c6661d7d46150d3fd12ae3d
+date:2019-08-20_17:17:53
+subject:Fix benchmarks.
+author:Victor Costan
+
+2	1	snappy_unittest.cc
+
+commitId:c6bf1170d8110e39b95d6c12bec91e0c9c413a7d
+date:2019-08-20_13:16:53
+subject:Fix benchmarks.
+author:Victor Costan
+
+4	0	snappy-test.h
+13	4	snappy_unittest.cc
+
+commitId:6219c7787bcb56b3e4330e3f82be2ca06c9d7d3d
+date:2019-08-20_13:16:41
+subject:Fix unused variable warnings in fuzzers.
+author:Victor Costan
+
+2	0	snappy_compress_fuzzer.cc
+
+commitId:5a57d32566da4172f8178f6502dcbe05f7af0f68
+date:2019-08-19_23:43:34
+subject:Rename zippy_*_fuzzer.cc -> snappy_*_fuzzer.cc.
+author:Victor Costan
+
+0	0	zippy_compress_fuzzer.cc => snappy_compress_fuzzer.cc
+0	0	zippy_uncompress_fuzzer.cc => snappy_uncompress_fuzzer.cc
+ rename zippy_compress_fuzzer.cc => snappy_compress_fuzzer.cc (100%)
+ rename zippy_uncompress_fuzzer.cc => snappy_uncompress_fuzzer.cc (100%)
+
+commitId:fd79e6f9b20c89db6f9d9cb40437abe0dd44009e
+date:2019-08-19_14:30:13
+subject:Merge pull request #78 from bshastry:libfuzzer-harness
+author:Victor Costan
+
+commitId:4c7f2d5dfb095ed73e63211c4e9cbdff9c23b899
+date:2019-08-19_14:30:00
+subject:Add BM_ZFlatAll, BM_ZFlatIncreasingTableSize benchmarks to see how good zippy performs when it is processing different data one after the other.
+author:Shahriar Rouf
+
+5	3	snappy.cc
+7	4	snappy.h
+63	0	snappy_unittest.cc
+
+commitId:a58d4b03c51e0c7e44df8693c16cd352503167ba
+date:2019-07-27_10:57:49
+subject:Update travis config for fuzzer builds
+author:Bhargava Shastry
+
+9	2	.travis.yml
+8	8	snappy-compress-uncompress-fuzzer.cc
+6	6	snappy-uncompress-fuzzer.cc
+
+commitId:d926a6bcb5de6678d189f8faa5436b5d6bfca77f
+date:2019-07-20_12:49:48
+subject:Updated to match .gitignore from google/leveldb
+author:Aman Gupta
+
+8	1	.gitignore
+
+commitId:6662dfb5d462698ce2e17431b8fd0f0b1abc17b3
+date:2019-07-13_13:08:35
+subject:Create .gitignore
+author:Aman Gupta
+
+1	0	.gitignore
+ create mode 100644 .gitignore
+
+commitId:d71375bf8a6a388db940cf5d1359638e8aa86606
+date:2019-07-12_14:42:48
+subject:Add libFuzzer harnesses, a cmake option to build them
+author:Bhargava Shastry
+
+3	0	.travis.yml
+22	0	CMakeLists.txt
+80	0	snappy-compress-uncompress-fuzzer.cc
+66	0	snappy-uncompress-fuzzer.cc
+ create mode 100644 snappy-compress-uncompress-fuzzer.cc
+ create mode 100644 snappy-uncompress-fuzzer.cc
+
+commitId:156cd8939c5fba7fa68ae08db843377ecc07b4b5
+date:2019-06-14_15:40:42
+subject:Removed reference to deprecated autotools.
+author:Chris Mumford
+
+0	1	README.md
+
+commitId:fe702ad2a37b001a8f603297ca710a1a6c629826
+date:2019-05-25_14:37:17
+subject:Use GCC 9 on Travis CI
+author:Victor Costan
+
+4	4	.travis.yml
+
+commitId:a3e012d762a592423ec83717f7d685b594c0e8e3
+date:2019-05-16_11:11:34
+subject:The snappy landing page at http://google.github.io/snappy/ is served by [GitHub Pages](https://pages.github.com/) and lives in the gh-pages branch. This changes moves the page contents to a more easily accessed Markdown file.
+author:Chris Mumford
+
+4	10	README.md
+72	0	docs/README.md
+ create mode 100644 docs/README.md
+
+commitId:4312f493154f358879272c0d45c5870948b3dd1c
+date:2019-05-16_11:11:21
+subject:Merge pull request #75 from Maikuolan:patch-1
+author:Chris Mumford
+
+commitId:407712f4c9cae98f693111cc900d964558b550a2
+date:2019-05-14_14:27:56
+subject:Merge pull request #76 from abyss7:patch-1
+author:Chris Mumford
+
+commitId:8c188a6c783989f77174e0c88ef9061faad3d06a
+date:2019-05-14_11:05:38
+subject:Minor typo fix in README.
+author:Chris Mumford
+
+1	1	README.md
+
+commitId:c76b0534495ae6868afcaf3ca13a7eaf327c46d7
+date:2019-05-14_11:02:57
+subject:Sync TODO and comment processing with external repo.
+author:Chris Mumford
+
+1	1	snappy-stubs-internal.h
+0	1	snappy-stubs-public.h.in
+9	8	snappy.cc
+0	2	snappy_unittest.cc
+
+commitId:54b6379e9f158710a9ef4b24067829de850ced1b
+date:2019-05-13_10:11:19
+subject:Changed CMake version from 3.4 to that in CMakeLists.txt in README.
+author:Chris Mumford
+
+2	1	README.md
+
+commitId:0af4349bf007e685fb12564e9471cc572d6a9ec6
+date:2019-05-13_10:11:19
+subject:Update Travis CI configuration.
+author:Victor Costan
+
+34	33	.travis.yml
+
+commitId:877cc86f0e1367cf67bcba809df30ffc9bd8e2a9
+date:2019-05-13_10:11:19
+subject:Fixed formatted (bash/c++) sections of README.md.
+author:Chris Mumford
+
+10	5	README.md
+
+commitId:02cf187555fc7a8034b1f98a1bff5d01e3411014
+date:2019-05-13_10:11:12
+subject:Remove MSan exemption for _bzhi_u32, since LLVM now handles it correctly.
+author:atdt
+
+1	3	snappy.cc
+
+commitId:be831dc98c2c33ab6be245e6ef126451b909528a
+date:2019-04-25_18:44:08
+subject:Fix compilation
+author:Ivan
+
+1	1	snappy-stubs-internal.h
+
+commitId:d58cd618be87e44603e6431bdc001973ff9eeb69
+date:2019-02-26_18:28:14
+subject:Remove MSBuild section from AppVeyor configuration.
+author:costan
+
+0	3	.appveyor.yml
+
+commitId:c197d686a9737082006dc24ba0c36f0c1d72b15b
+date:2019-02-26_18:27:31
+subject:Optimize snappy compression by about 2.2%.
+author:nafi
+
+8	10	snappy.cc
+
+commitId:3f194acb57e0487531c96b97af61dcbd025a78a3
+date:2019-01-08_13:49:15
+subject:Convert DCHECK to assert.
+author:costan
+
+1	1	snappy.cc
+
+commitId:97a20b480fb35152d6f6f5c5d6bd66a218ba48e4
+date:2019-01-08_13:48:30
+subject:Reduce the LeftShiftOverflows() table size.
+author:costan
+
+7	11	snappy.cc
+
+commitId:4f0adca400ed519c463f8bbc3031296e38dd746d
+date:2019-01-08_06:44:11
+subject:Wrap BMI2 instruction usage in support checks.
+author:costan
+
+1	1	.appveyor.yml
+12	3	.travis.yml
+22	2	CMakeLists.txt
+3	0	cmake/config.h.in
+25	2	snappy.cc
+
+commitId:46768e335d6454855aed17ba3162b5903395bfba
+date:2019-01-08_06:35:12
+subject:Optimize decompression by about 0.82%.
+author:nafi
+
+15	1	snappy.cc
+
+commitId:fdba21ffd6ea490401fd37f4230db37222cbc57a
+date:2019-01-06_13:49:33
+subject:Fix typo in two argument names in stubs.
+author:costan
+
+3	3	snappy-stubs-internal.h
+
+commitId:81d444e4e4a146fdc503ff335ddb5cf0238cce4f
+date:2019-01-06_12:49:08
+subject:Remove direct use of _builtin_clz.
+author:costan
+
+44	11	snappy-stubs-internal.h
+3	1	snappy.cc
+
+commitId:9a6fa91217afd12b75311e07750b6d4920870ed3
+date:2019-01-06_12:48:39
+subject:Remove use of std::uniform_distribution<uint8_t>.
+author:costan
+
+6	6	snappy_unittest.cc
+
+commitId:3fcbc47f9976c880d1e915b1c7cf17633e70e772
+date:2019-01-04_19:09:39
+subject:Use std random number generators in tests.
+author:costan
+
+0	50	snappy-test.h
+55	31	snappy_unittest.cc
+
+commitId:925c3094c4a7daaf85975a9737e89036b433c444
+date:2019-01-04_19:09:15
+subject:Convert DCHECK to assert.
+author:costan
+
+2	2	snappy.cc
+
+commitId:02de4ff1d16612c3a0168d9cd1d45186a805835e
+date:2019-01-04_19:09:07
+subject:Update Travis CI configuration.
+author:costan
+
+15	14	.travis.yml
+
+commitId:f7aece15e2130154181e96875fbe86f1b59b526d
+date:2019-01-04_19:09:01
+subject:Add comment explaining MSan false-positive workaround
+author:atdt
+
+2	0	snappy.cc
+
+commitId:5913c5f8e45d667b26f85a4d66ef9b4fab4d54f4
+date:2019-01-04_19:08:53
+subject:Don't use _bzhi_u32 under MSan
+author:atdt
+
+1	1	snappy.cc
+
+commitId:136b3ebc3101a3459a251e4359efbf67fef246a0
+date:2019-01-04_19:08:39
+subject:If BMI instructions are available, use BZHI to extract low bytes.
+author:atdt
+
+11	8	snappy.cc
+
+commitId:eb47f79631fc2e23739a5b09c0d46497fd4b95d1
+date:2019-01-04_19:08:30
+subject:Optimize by about 0.5%.
+author:nafi
+
+22	13	snappy.cc
+
+commitId:254966c71e0d6e44e432e03dc8f9121816868ac6
+date:2019-01-04_19:08:11
+subject:Migrate to use absl::random
+author:jueminyang
+
+10	9	snappy_unittest.cc
+
+commitId:53a38e5e339d2083e14266ab1f8c6dad1043b527
+date:2019-01-04_19:07:49
+subject:Reduce number of allocations when compressing and simplify the code.
+author:alkis
+
+12	5	snappy-internal.h
+42	56	snappy.cc
+1	1	snappy_unittest.cc
+
+commitId:df5548c0b36f90b71575dd96bc10387893e20b3f
+date:2019-01-04_19:07:40
+subject:Use sized deallocation when releasing Zippy's scratch buffers.
+author:ckennelly
+
+21	11	snappy.cc
+
+commitId:1b7466e14300ffa2e7e0e4d21c034f2a12048796
+date:2019-01-04_19:07:28
+subject:Compute the wordmask instead of looking it up in a table.
+author:alkis
+
+11	24	snappy.cc
+
+commitId:a866f7181c450d502faec404100c2c6e5f8d8bdd
+date:2018-12-14_17:12:32
+subject:Update README to use HTTPS instead of HTTP.
+author:Caleb Mazalevskis
+
+4	4	README.md
+
+commitId:ea660b57d65d68d521287c903459b6dd3b2804d0
+date:2018-08-17_14:31:23
+subject:Fix unused private field warning in NDEBUG builds.
+author:costan
+
+10	4	snappy.cc
+
+commitId:7fefd231a19a0c9e10273a04204889d138d448b1
+date:2018-08-16_11:36:45
+subject:C++11 guarantees <cstddef> and <cstdint>.
+author:costan
+
+0	10	CMakeLists.txt
+0	6	cmake/config.h.in
+14	31	snappy-stubs-public.h.in
+0	2	snappy-test.h
+3	3	snappy.cc
+1	1	snappy.h
+
+commitId:db082d2cd6512981c28849d00dd47a4216768e10
+date:2018-08-16_11:36:19
+subject:Remove GCC on OSX from the Travis CI matrix.
+author:costan
+
+5	3	.travis.yml
+
+commitId:ad82620f6fbb480324e361748b7c90403991b724
+date:2018-08-09_12:08:12
+subject:Move pshufb_fill_patterns from snappy-internal.h to snappy.cc.
+author:costan
+
+0	13	snappy-internal.h
+17	1	snappy.cc
+
+commitId:73c31e824c2640b78d7dcf02bb83b21f53c843c8
+date:2018-08-08_22:25:14
+subject:Fix Visual Studio build.
+author:costan
+
+1	1	.appveyor.yml
+1	1	.travis.yml
+40	5	CMakeLists.txt
+3	0	cmake/config.h.in
+22	5	snappy.cc
+
+commitId:27ff0af12a82c9970090bf960ff6d7863774ef6c
+date:2018-08-07_23:41:17
+subject:Improve performance of zippy decompression to IOVecs by up to almost 50%
+author:jefflim
+
+65	72	snappy.cc
+1	1	snappy_unittest.cc
+
+commitId:4ffb0e62c56b2643c4fa4c24b0585182fa803815
+date:2018-08-07_21:33:14
+subject:Update Travis CI configuration.
+author:costan
+
+6	6	.travis.yml
+
+commitId:be490ef9ecc113e4cc8fe986bcc3166ee15df111
+date:2018-08-04_18:51:13
+subject:Test for SSE3 suppport before using pshufb.
+author:atdt
+
+1	1	snappy.cc
+
+commitId:8f469d97e2ccbd87e5c00d25b1969daebfbfa350
+date:2018-08-04_18:51:07
+subject:Avoid store-forwarding stalls in Zippy's IncrementalCopy
+author:atdt
+
+13	0	snappy-internal.h
+12	0	snappy-stubs-internal.h
+33	1	snappy.cc
+
+commitId:4f7bd2dbfd12bfda77488baf46c2f7648c9f1999
+date:2018-03-09_09:02:34
+subject:Update CI configurations.
+author:costan
+
+1	4	.appveyor.yml
+9	9	.travis.yml
+
+commitId:ca37ab7fb9b718e056009babb4fea591626e5882
+date:2018-02-17_00:47:18
+subject:Ensure DecompressAllTags starts on a 32-byte boundary + 16 bytes.
+author:jgorbe
+
+19	0	snappy.cc
+
+commitId:15a2804cd2fcea1dab72b9c1eae0f71e4294c0da
+date:2018-02-17_00:46:31
+subject:Fix an incorrect analysis / comment in the "pattern doubling" code.
+author:scrubbed
+
+8	11	snappy.cc
+
+commitId:e69d9f880677f2aa3488c80b953ec4309f0dfa2e
+date:2018-01-04_15:27:36
+subject:Fix Travis CI configuration for OSX.
+author:costan
+
+11	4	.travis.yml
+
+commitId:4aba5426d47af960939d85d6f74c0a6ac7124887
+date:2018-01-04_15:27:15
+subject:Rework a very hot, very sensitive part of snappy to reduce the number of instructions, the number of dynamic branches, and avoid a particular loop structure than LLVM has a very hard time optimizing for this particular case.
+author:chandlerc
+
+49	11	snappy.cc
+
+commitId:26102a0c66175bc39edbf484c994a21902e986dc
+date:2017-12-20_14:32:54
+subject:Fix generated version number in open source release.
+author:costan
+
+3	3	snappy-stubs-public.h.in
+
+commitId:b02bfa754ebf27921d8da3bd2517eab445b84ff9
+date:2017-08-24_16:54:23
+subject:Tag open source release 1.1.7.
+author:costan
+
+1	1	CMakeLists.txt
+8	0	NEWS
+
+commitId:824e6718b5b5a50d32a89124853da0a11828b25c
+date:2017-08-24_16:54:12
+subject:Add a loop alignment directive to work around a performance regression.
+author:wmi
+
+7	0	snappy.cc
+
+commitId:55924d11095df25ab25c405fadfe93d0a46f82eb
+date:2017-08-16_19:19:31
+subject:Add GNUInstallDirs to CMake configuration.
+author:costan
+
+14	4	CMakeLists.txt
+
+commitId:632cd0f12856ef7e1feda46021940a98d7117bda
+date:2017-08-16_19:18:22
+subject:Use 64-bit optimized code path for ARM64.
+author:costan
+
+1	4	CMakeLists.txt
+3	3	cmake/config.h.in
+2	1	snappy-internal.h
+20	15	snappy-stubs-internal.h
+
+commitId:77c12adc192ac6620a0f0d340c99149ec56a97a3
+date:2017-08-02_10:56:06
+subject:Add unistd.h checks back to the CMake build.
+author:costan
+
+2	0	CMakeLists.txt
+6	0	cmake/config.h.in
+4	0	snappy-stubs-internal.h
+
+commitId:c8049c58273d9dc02299bb441b75b4cbb3ea7917
+date:2017-08-01_14:38:57
+subject:Replace getpagesize() with sysconf(_SC_PAGESIZE).
+author:costan
+
+5	4	snappy_unittest.cc
+
+commitId:18e2f220d86dc0ad436cbd5e28b1e4b49e49e30d
+date:2017-08-01_14:38:24
+subject:Add guidelines for opensource contributions.
+author:costan
+
+26	0	CONTRIBUTING.md
+ create mode 100644 CONTRIBUTING.md
+
+commitId:f0d3237c320fb4b3e5d9d05c7182f33fdca7abe6
+date:2017-08-01_14:38:02
+subject:Use _BitScanForward and _BitScanReverse on MSVC.
+author:costan
+
+36	0	snappy-stubs-internal.h
+
+commitId:71b8f8688702bbaf2dd7e123f19c0370f67dc226
+date:2017-08-01_14:36:26
+subject:Add SNAPPY_ prefix to PREDICT_{TRUE,FALSE} macros.
+author:jueminyang
+
+3	3	snappy-internal.h
+4	4	snappy-stubs-internal.h
+1	1	snappy-test.h
+16	15	snappy.cc
+
+commitId:be6dc3db83c4701e3e79694dcbfd1c3da03b91dd
+date:2017-07-28_10:14:21
+subject:Redo CMake configuration.
+author:costan
+
+2	2	.appveyor.yml
+2	2	.travis.yml
+162	144	CMakeLists.txt
+1	0	cmake/SnappyConfig.cmake
+0	9	cmake/SnappyConfig.cmake.in
+13	13	snappy-stubs-public.h.in
+ create mode 100644 cmake/SnappyConfig.cmake
+ delete mode 100644 cmake/SnappyConfig.cmake.in
+
+commitId:e4de6ce087aaf72dfce7d8d252c3a82f18419cae
+date:2017-07-27_16:46:54
+subject:Small improvements to open source CI configuration.
+author:costan
+
+5	2	appveyor.yml => .appveyor.yml
+10	4	.travis.yml
+ rename appveyor.yml => .appveyor.yml (82%)
+
+commitId:c756f7f5d90ad7591d4f96bb0da8159634943359
+date:2017-07-27_16:46:54
+subject:Support both static and shared library CMake builds.
+author:costan
+
+8	2	CMakeLists.txt
+
+commitId:038a3329b1965d67bf0dddb3fb6b984549fa48d3
+date:2017-07-27_16:46:42
+subject:Inline DISALLOW_COPY_AND_ASSIGN.
+author:costan
+
+3	1	snappy-internal.h
+3	1	snappy-stubs-internal.h
+0	6	snappy-stubs-public.h.in
+
+commitId:a8b239c3de22b05c9f267940f3ee8df1a388f39b
+date:2017-07-25_18:20:38
+subject:snappy: Remove autoconf build configuration.
+author:costan
+
+0	2468	ChangeLog
+0	31	Makefile.am
+0	12	autogen.sh
+0	131	configure.ac
+0	74	m4/gtest.m4
+0	10	snappy.pc.in
+ delete mode 100644 ChangeLog
+ delete mode 100644 Makefile.am
+ delete mode 100755 autogen.sh
+ delete mode 100644 configure.ac
+ delete mode 100644 m4/gtest.m4
+ delete mode 100644 snappy.pc.in
+
+commitId:27671c6aec6886f394a46dda2d345043a9b5f62a
+date:2017-07-25_18:17:35
+subject:Clean up CMake header and type checks.
+author:costan
+
+3	18	CMakeLists.txt
+24	58	cmake/config.h.in
+0	10	snappy-test.h
+
+commitId:548501c98860bbe46e0eeda53942be67c7decef1
+date:2017-07-13_03:56:49
+subject:zippy: Re-release snappy 1.1.5 as 1.1.6.
+author:costan
+
+3	2	CMakeLists.txt
+11	0	NEWS
+2	2	configure.ac
+
+commitId:513df5fb5a2d51146f409141f9eb8736935cc486
+date:2017-06-28_18:37:30
+subject:Tag open source release 1.1.5.
+author:costan
+
+1	1	CMakeLists.txt
+13	0	NEWS
+2	2	configure.ac
+
+commitId:5bc9c82ae3774889e47176460fe02eb3e67cf0e1
+date:2017-06-28_18:37:08
+subject:Set minimum CMake version to 3.1.
+author:costan
+
+1	1	CMakeLists.txt
+
+commitId:e9720a001d4feffe1fc9770859fe9913d0d5ede6
+date:2017-06-28_18:36:37
+subject:Update Travis CI config, add AppVeyor for Windows CI coverage.
+author:costan
+
+52	15	.travis.yml
+38	0	appveyor.yml
+3	0	snappy-test.cc
+ create mode 100644 appveyor.yml
+
+commitId:f24f9d2d97fe702822bf4fcc23fbce0912b5060a
+date:2017-06-28_18:34:54
+subject:Explicitly copy internal::wordmask to the stack array to work around a compiler optimization with LLVM that converts const stack arrays to global arrays.  This is a temporary change and should be reverted when https://reviews.llvm.org/D30759 is fixed.
+author:tmsriram
+
+10	1	snappy.cc
+
+commitId:82deffcde796fe2b6260087485cbb64543aa8788
+date:2017-06-28_18:33:55
+subject:Remove benchmarking support for fastlz.
+author:ysaed
+
+0	5	CMakeLists.txt
+3	3	README.md
+0	3	cmake/config.h.in
+1	2	configure.ac
+0	4	snappy-test.h
+2	38	snappy_unittest.cc
+
+commitId:18488d6212331fee647ecfded85353ab3ad91de8
+date:2017-06-28_18:33:13
+subject:Use 64 bit little endian on ppc64le.
+author:alkis
+
+2	3	snappy-internal.h
+4	0	snappy-stubs-internal.h
+
+commitId:7b9532b8781c5beaf99eef8ca7535d969a129d78
+date:2017-06-05_13:54:17
+subject:Improve the SSE2 macro check on Windows.
+author:alkis
+
+11	2	snappy.cc
+
+commitId:7dadceea528fcaf33af7f2cf8322d8789e4e9b1d
+date:2017-06-05_13:54:17
+subject:Check for the existence of sys/uio.h in autoconf build.
+author:alkis
+
+1	1	configure.ac
+
+commitId:83179dd8be390bb904882e34143d44551f475be0
+date:2017-06-05_13:54:10
+subject:Remove quicklz and lzf support in benchmarks.
+author:jyrki
+
+0	2	CMakeLists.txt
+0	6	cmake/config.h.in
+0	2	configure.ac
+2	86	snappy_unittest.cc
+
+commitId:c8131680d018bad83a0b0b2e2f6e49a37593c550
+date:2017-06-05_13:53:29
+subject:Provide a CMakeLists.txt.
+author:vrabaud
+
+15	11	.travis.yml
+162	0	CMakeLists.txt
+10	0	README.md
+9	0	cmake/SnappyConfig.cmake.in
+99	0	cmake/config.h.in
+ create mode 100644 CMakeLists.txt
+ create mode 100644 cmake/SnappyConfig.cmake.in
+ create mode 100644 cmake/config.h.in
+
+commitId:ed3b7b242bd24de2ca6750c73f64bee5b7505944
+date:2017-03-17_13:59:03
+subject:Clean up unused function warnings in snappy.
+author:costan
+
+0	5	snappy-internal.h
+4	17	snappy-test.h
+8	1	snappy.cc
+4	6	snappy_unittest.cc
+
+commitId:8b60aac4fdbbb8f1dcce778accb5c04136c3a908
+date:2017-03-13_13:03:01
+subject:Remove "using namespace std;" from zippy-stubs-internal.h.
+author:costan
+
+0	4	snappy-stubs-internal.h
+7	7	snappy-test.cc
+9	8	snappy-test.h
+5	5	snappy.cc
+3	3	snappy_unittest.cc
+
+commitId:7d7a8ec805192a192dda1906280387b2c8665225
+date:2017-03-10_12:40:15
+subject:Add Travis CI configuration to snappy and fix the make build.
+author:costan
+
+12	0	.travis.yml
+5	0	Makefile.am
+ create mode 100644 .travis.yml
+
+commitId:1cd3ab02e9dcbc1b76781530fb4981e4eac61b50
+date:2017-03-08_12:05:05
+subject:Rename README to README.md. It already in markdown, we might as well let github know so that it renders nicely.
+author:alkis
+
+0	0	README => README.md
+ rename README => README.md (100%)
+
+commitId:597fa795def39e6e461ba17ce4a5316ff6bdcb08
+date:2017-03-08_11:42:30
+subject:Delete UnalignedCopy64 from snappy-stubs since the version in snappy.cc is more robust and possibly faster (assuming the compiler knows how to best copy 8 bytes between locations in memory the fastest way possible - a rather safe bet).
+author:alkis
+
+0	14	snappy-stubs-internal.h
+
+commitId:039b3a7ace1ffe88e03218d59f8c370577e1bdf2
+date:2017-03-08_11:42:30
+subject:Add std:: prefix to STL non-type names.
+author:scrubbed
+
+2	2	snappy_unittest.cc
+
+commitId:3c706d22306efbd0d6ac050cb48179e1dcfbff7a
+date:2017-03-08_11:42:30
+subject:Make UnalignedCopy64 not exhibit undefined behavior when src and dst overlap.
+author:alkis
+
+6	2	snappy.cc
+
+commitId:d3c6d20d0a882e1220c9f2a9a8867531971b7841
+date:2017-03-08_11:42:21
+subject:Add compression size reporting hooks.
+author:skanev
+
+18	4	snappy.cc
+
+commitId:626e1b9faa81e6f744b8b101ab0cf94c5927d15a
+date:2017-03-07_18:09:49
+subject:Use #ifdef __SSE2__ for the emmintrin.h include, otherwise snappy.cc does not compile with -march=prescott.
+author:alkis
+
+1	1	snappy.cc
+
+commitId:2d99bd14d471664758e4dfdf81b44f413a7353fd
+date:2017-01-27_09:12:04
+subject:1.1.4 release.
+author:Alkis Evlogimenos
+
+8	0	NEWS
+2	2	configure.ac
+
+commitId:8bfb028b618747a6ac8af159c87e9196c729566f
+date:2017-01-27_09:10:36
+subject:Improve zippy decompression speed.
+author:Alkis Evlogimenos
+
+143	122	snappy.cc
+
+commitId:818b583387a5288cb2778031655a5e764e5ad124
+date:2017-01-26_21:43:13
+subject:adds std:: to stl types (#061)
+author:Behzad Nouri
+
+12	11	snappy-internal.h
+4	3	snappy.cc
+6	5	snappy_unittest.cc
+
+commitId:27c5d86527532a8a2d73ae0e6d78bdbd626c3590
+date:2017-01-26_21:42:26
+subject:Re-work fast path for handling copies in zippy decompression.
+author:Geoff Pike
+
+30	8	snappy.cc
+
+commitId:4a740940803af465c8a4c13819e8c7a5214dbd6b
+date:2017-01-26_21:42:11
+subject:Speed up Zippy decompression in PIE mode by removing the penalty for global array access.
+author:Sriraman Tallam
+
+4	0	snappy.cc
+
+commitId:38a5ec5fcaca58556889c840cbcbb2886e524979
+date:2017-01-26_21:39:39
+subject:Re-work fast path that emits copies in zippy compression.
+author:Geoff Pike
+
+30	16	snappy-internal.h
+42	30	snappy.cc
+4	3	snappy_unittest.cc
+
+commitId:094c67de88f41eae494a3823f8aaf0f77b25b980
+date:2017-01-26_21:38:49
+subject:Speed up the EmitLiteral fast path, +1.62% for ZFlat benchmarks.
+author:ckennelly
+
+21	17	snappy.cc
+
+commitId:fce661fa8cfec792dd1ef7fee52320188349feae
+date:2017-01-26_21:38:36
+subject:Speed up zippy decompression by removing some zero-extensions.
+author:Geoff Pike
+
+4	4	snappy.cc
+
+commitId:e788e527d3d16db4059f92291c7806fe273c8f67
+date:2017-01-26_21:35:55
+subject:Avoid calling memset when resizing the buffer.
+author:ckennelly
+
+1	1	snappy.cc
+
+commitId:32d6d7d8a2ef328a2ee1dd40f072e21f4983ebda
+date:2016-05-23_11:16:01
+subject:Merge pull request #6 from deviance/provide-pkg-config-data
+author:Steinar H. Gunderson
+
+commitId:971613510fc0d1791eed2aae469938afc9636958
+date:2016-05-20_11:35:25
+subject:Add #ifdef to guard against macro redefinition if this is included in another Google project that also defines this.
+author:Peter Kasting
+
+2	0	snappy-stubs-public.h.in
+
+commitId:0000f997dd65aabc8eb8ac0c1461e9c4f6c240d3
+date:2016-05-20_11:28:45
+subject:Merge pull request #13 from huachaohuang/patch-1
+author:Steinar H. Gunderson
+
+commitId:d53de18799418e113e44444252a39b12a0e4e0cc
+date:2016-04-05_11:50:26
+subject:Make heuristic match skipping more aggressive.
+author:Steinar H. Gunderson
+
+5	4	snappy.cc
+
+commitId:2b9152d9c5bed71dffb7f7f6c7a3ec48b058ff2d
+date:2016-03-10_18:37:05
+subject:Default to glibtoolize instead of libtoolize if it exists, and also make it customizable through the environment variable $LIBTOOLIZE.
+author:Steinar H. Gunderson
+
+6	1	autogen.sh
+
+commitId:0800b1e4c7a9683af0ab3760f1e29e163b0d0f10
+date:2016-01-08_15:05:44
+subject:Work around an issue where some compilers interpret <:: as a trigraph. Also correct the namespace name.
+author:Steinar H. Gunderson
+
+4	4	snappy-stubs-internal.h
+
+commitId:e7d2818d1eed26aae44cb8a975fc647212bf0923
+date:2016-01-08_11:40:06
+subject:Unbreak the open-source build for ARM due to missing ATTRIBUTE_PACKED declaration.
+author:Steinar H. Gunderson
+
+6	0	snappy-stubs-internal.h
+
+commitId:7525a1600d71b9f9f6b4382cd2356032309d1457
+date:2016-01-04_12:52:15
+subject:Fix an issue where the ByteSource path (used for parsing std::string) would incorrectly accept some invalid varints that the other path would not, causing potential CHECK-failures if the unit test were run with --write_uncompressed and a corrupted input file.
+author:Steinar H. Gunderson
+
+2	0	snappy-test.h
+3	1	snappy.cc
+14	0	snappy_unittest.cc
+
+commitId:ef5598aa0e867db5243188751054c9b2223b0e5f
+date:2016-01-04_12:51:31
+subject:Make UNALIGNED_LOAD16/32 on ARMv7 go through an explicitly unaligned struct, to avoid the compiler coalescing multiple loads into a single load instruction (which only work for aligned accesses).
+author:Steinar H. Gunderson
+
+36	5	snappy-stubs-internal.h
+
+commitId:b8cd908a86b9aafcb6ed277ba950c4293a38fe16
+date:2015-10-28_17:18:23
+subject:Allow to compile in nested packages.
+author:Huachao Huang
+
+1	0	configure.ac
+
+commitId:96a2e340f381ac4dae270f0fe0a8d79fad748c4d
+date:2015-08-26_17:50:48
+subject:Update URLs in the Snappy README to reflect the move to GitHub.
+author:Steinar H. Gunderson
+
+10	6	README
+
+commitId:0852af76065ba0f35944527e14787f7ae5e0b3ac
+date:2015-08-19_11:37:51
+subject:Move the logic from ComputeTable into the unit test, which means it's run automatically together with the other tests, and also removes the stray function ComputeTable() (which was never referenced by anything else in the open-source version, causing compiler warnings for some) out of the core library.
+author:Steinar H. Gunderson
+
+62	0	snappy-internal.h
+8	164	snappy.cc
+97	0	snappy_unittest.cc
+
+commitId:d80342922cd7fa16f6b42a2d7aa9d234adcaecdd
+date:2015-08-03_13:17:04
+subject:Fix signed-vs.-unsigned comparison warnings.
+author:Steinar H. Gunderson
+
+4	4	snappy.cc
+
+commitId:d2cb73b6ac1839462fcea926c7e73d1e627bd699
+date:2015-07-31_16:25:17
+subject:Provide pkg-config data
+author:Aleksandr Makarov
+
+3	0	Makefile.am
+1	1	configure.ac
+10	0	snappy.pc.in
+ create mode 100644 snappy.pc.in
+
+commitId:efb39e81b8b66b757ec900db33657c47b4750740
+date:2015-07-07_10:45:04
+subject:Release Snappy 1.1.3; getting the new Uncompress variant in a release is nice, and it's also good to finally get an official release out after the migration to GitHub.
+author:Steinar H. Gunderson
+
+2468	1916	ChangeLog
+12	0	NEWS
+2	2	configure.ac
+
+commitId:eb66d8176b3d1f560ee012e1b488cb1540c45f88
+date:2015-07-06_14:21:16
+subject:Initialized members of SnappyArrayWriter and SnappyDecompressionValidator. These members were almost surely initialized before use by other member functions, but Coverity was warning about this. Eliminating these warnings minimizes clutter in that report and the likelihood of overlooking a real bug.
+author:Steinar H. Gunderson
+
+3	2	snappy.cc
+
+commitId:b2312c4c25883ab03b5110f1b006dce95f419a4f
+date:2015-07-06_14:21:00
+subject:Add support for Uncompress(source, sink). Various changes to allow Uncompress(source, sink) to get the same performance as the different variants of Uncompress to Cord/DataBuffer/String/FlatBuffer.
+author:Steinar H. Gunderson
+
+33	0	snappy-sinksource.cc
+47	0	snappy-sinksource.h
+248	1	snappy.cc
+20	0	snappy.h
+72	0	snappy_unittest.cc
+
+commitId:b2ad96006741d40935db2f73194a3e489b467338
+date:2015-06-22_16:09:56
+subject:Changes to eliminate compiler warnings on MSVC
+author:Steinar H. Gunderson
+
+13	12	snappy_unittest.cc
+
+commitId:e7a897e187e90b33f87bd9e64872cf561de9ebca
+date:2015-06-22_16:09:56
+subject:Fixed unit tests to compile under MSVC.
+author:Steinar H. Gunderson
+
+5	2	snappy-test.cc
+11	1	snappy-test.h
+
+commitId:86eb8b152bdb065ad11bf331a9f7d65b72616acf
+date:2015-06-22_16:09:56
+subject:Change a few branch annotations that profiling found to be wrong. Overall performance is neutral or slightly positive.
+author:Steinar H. Gunderson
+
+2	2	snappy-internal.h
+2	2	snappy.cc
+
+commitId:11ccdfb868387e56d845766d89ddab9d489c4128
+date:2015-06-22_16:08:38
+subject:Sync with various Google-internal changes.
+author:Steinar H. Gunderson
+
+6	1	snappy-test.h
+0	1	snappy.cc
+21	31	snappy_unittest.cc
+
+commitId:22acaf438ed93ab21a2ff1919d173206798b996e
+date:2015-06-22_15:39:08
+subject:Change some internal path names.
+author:Steinar H. Gunderson
+
+1	1	COPYING
+3	3	snappy-c.h
+3	3	snappy-internal.h
+4	6	snappy-sinksource.h
+3	3	snappy-stubs-internal.h
+3	3	snappy-stubs-public.h.in
+3	3	snappy-test.h
+3	4	snappy.h
+
+commitId:1ff9be9b8fafc8528ca9e055646f5932aa5db9c4
+date:2014-02-28_11:18:07
+subject:Release Snappy 1.1.2.
+author:snappy.mirrorbot@gmail.com
+
+30	0	ChangeLog
+11	0	NEWS
+2	2	configure.ac
+
+commitId:19690d78e83f8963f497585031efa3d9ca66b807
+date:2014-02-19_10:31:49
+subject:Fix public issue 82: Stop distributing benchmark data files that have unclear or unsuitable licensing.
+author:snappy.mirrorbot@gmail.com
+
+26	0	COPYING
+1	1	Makefile.am
+3	13	snappy_unittest.cc
+0	645	testdata/cp.html
+0	431	testdata/fields.c
+-	-	testdata/fireworks.jpeg
+0	94	testdata/grammar.lsp
+-	-	testdata/house.jpg
+-	-	testdata/kennedy.xls
+-	-	testdata/mapreduce-osdi-1.pdf
+598	0	testdata/paper-100k.pdf
+-	-	testdata/ptt5
+-	-	testdata/sum
+0	112	testdata/xargs.1
+ delete mode 100644 testdata/cp.html
+ delete mode 100644 testdata/fields.c
+ create mode 100644 testdata/fireworks.jpeg
+ delete mode 100644 testdata/grammar.lsp
+ delete mode 100644 testdata/house.jpg
+ delete mode 100644 testdata/kennedy.xls
+ delete mode 100644 testdata/mapreduce-osdi-1.pdf
+ create mode 100644 testdata/paper-100k.pdf
+ delete mode 100644 testdata/ptt5
+ delete mode 100644 testdata/sum
+ delete mode 100644 testdata/xargs.1
+
+commitId:f82bff66afe0de4c9ae22f8c4ef84e3c2233e799
+date:2013-10-25_13:31:27
+subject:Add support for padding in the Snappy framed format.
+author:snappy.mirrorbot@gmail.com
+
+15	4	framing_format.txt
+
+commitId:eeead8dc38ea359f027fb6e89f345448e8e9d723
+date:2013-10-15_15:21:31
+subject:Release Snappy 1.1.1.
+author:snappy.mirrorbot@gmail.com
+
+268	0	ChangeLog
+13	0	NEWS
+2	2	configure.ac
+
+commitId:6bc39e24c76adbbff26ae629fafbf7dfc795f554
+date:2013-08-13_12:55:00
+subject:Add autoconf tests for size_t and ssize_t. Sort-of resolves public issue 79; it would solve the problem if MSVC typically used autoconf. However, it gives a natural place (config.h) to put the typedef even for MSVC.
+author:snappy.mirrorbot@gmail.com
+
+2	0	configure.ac
+
+commitId:7c3c01df77e191ad1f8377448961fe88db2802e9
+date:2013-07-29_11:06:44
+subject:When we compare the number of bytes produced with the offset for a backreference, make the signedness of the bytes produced clear, by sticking it into a size_t. This avoids a signed/unsigned compare warning from MSVC (public issue 71), and also is slightly clearer.
+author:snappy.mirrorbot@gmail.com
+
+13	2	snappy.cc
+
+commitId:2f0aaf8631d8fb2475ca1a6687c181efb14ed286
+date:2013-06-30_19:24:03
+subject:In the fast path for decompressing literals, instead of checking whether there's 16 bytes free and then checking right afterwards (when having subtracted the literal size) that there are now 5 bytes free, just check once for 21 bytes. This skips a compare and a branch; although it is easily predictable, it is still a few cycles on a fast path that we would like to get rid of.
+author:snappy.mirrorbot@gmail.com
+
+27	19	snappy.cc
+0	1	snappy.h
+
+commitId:062bf544a61107db730b6d08cb0b159c4dd9b24c
+date:2013-06-14_21:42:26
+subject:Make the two IncrementalCopy* functions take in an ssize_t instead of a len, in order to avoid having to do 32-to-64-bit signed conversions on a hot path during decompression. (Also fixes some MSVC warnings, mentioned in public issue 75, but more of those remain.) They cannot be size_t because we expect them to go negative and test for that.
+author:snappy.mirrorbot@gmail.com
+
+4	4	snappy.cc
+
+commitId:328aafa1980824a9afdcd50edc30d9d5157e417f
+date:2013-06-13_16:19:52
+subject:Add support for uncompressing to iovecs (scatter I/O). Windows does not have struct iovec defined anywhere, so we define our own version that's equal to what UNIX typically has.
+author:snappy.mirrorbot@gmail.com
+
+5	0	configure.ac
+13	0	snappy-stubs-public.h.in
+2	0	snappy-test.h
+177	0	snappy.cc
+22	0	snappy.h
+203	2	snappy_unittest.cc
+
+commitId:cd92eb0852e2339187b693eef3595a07d2276c1d
+date:2013-06-12_19:51:15
+subject:Some code reorganization needed for an internal change.
+author:snappy.mirrorbot@gmail.com
+
+8	17	snappy.cc
+
+commitId:a3e928d62bbd61b523b988c07b560253950cf73b
+date:2013-04-09_15:33:30
+subject:Supports truncated test data in zippy benchmark.
+author:snappy.mirrorbot@gmail.com
+
+12	8	snappy-test.cc
+8	12	snappy-test.h
+41	34	snappy_unittest.cc
+
+commitId:bde324c0169763688f35ee44630a26ad1f49eec3
+date:2013-02-05_14:36:15
+subject:Release Snappy 1.1.0.
+author:snappy.mirrorbot@gmail.com
+
+401	0	ChangeLog
+15	0	NEWS
+3	3	configure.ac
+
+commitId:8168446c7eaaa0594e1f4ca923376dcf3a2846fa
+date:2013-02-05_14:30:05
+subject:Make ./snappy_unittest pass without "srcdir" being defined.
+author:snappy.mirrorbot@gmail.com
+
+1	1	snappy-test.cc
+
+commitId:27a0cc394950ebdad2e8d67322f0862835b10bd9
+date:2013-01-18_12:16:36
+subject:Increase the Zippy block size from 32 kB to 64 kB, winning ~3% density while being effectively performance neutral.
+author:snappy.mirrorbot@gmail.com
+
+9	9	framing_format.txt
+9	8	snappy.h
+
+commitId:81f34784b7b812dcda956ee489dfdc74ec2da990
+date:2013-01-06_19:21:26
+subject:Adjust the Snappy open-source distribution for the changes in Google's internal file API.
+author:snappy.mirrorbot@gmail.com
+
+6	3	snappy-test.cc
+22	7	snappy-test.h
+9	7	snappy_unittest.cc
+
+commitId:698af469b47fe809905e2ed173ad84241de5800f
+date:2013-01-04_11:54:20
+subject:Change a few ORs to additions where they don't matter. This helps the compiler use the LEA instruction more efficiently, since e.g. a + (b << 2) can be encoded as one instruction. Even more importantly, it can constant-fold the COPY_* enums together with the shifted negative constants, which also saves some instructions. (We don't need it for LITERAL, since it happens to be 0.)
+author:snappy.mirrorbot@gmail.com
+
+2	2	snappy.cc
+
+commitId:55209f9b92efd97e0a61be28ed94210de04c3bfc
+date:2012-10-08_11:37:16
+subject:Stop giving -Werror to automake, due to an incompatibility between current versions of libtool and automake on non-GNU platforms (e.g. Mac OS X).
+author:snappy.mirrorbot@gmail.com
+
+1	1	configure.ac
+
+commitId:b86e81c8b3426a62d8ab3a7674c2506e9e678740
+date:2012-08-17_13:54:47
+subject:Fix public issue 66: Document GetUncompressedLength better, in particular that it leaves the source in a state that's not appropriate for RawUncompress.
+author:snappy.mirrorbot@gmail.com
+
+7	0	snappy.h
+
+commitId:2e225ba821b420ae28e1d427075d5589c1e892d9
+date:2012-07-31_11:44:44
+subject:Fix public issue 64: Check for <sys/time.h> at configure time, since MSVC seemingly does not have it.
+author:snappy.mirrorbot@gmail.com
+
+1	1	configure.ac
+2	0	snappy-test.h
+
+commitId:e89f20ab46ee11050760c6d57f05c2a3825a911c
+date:2012-07-04_09:34:48
+subject:Handle the case where gettimeofday() goes backwards or returns the same value twice; it could cause division by zero in the unit test framework. (We already had one fix for this in place, but it was incomplete.)
+author:snappy.mirrorbot@gmail.com
+
+19	14	snappy-test.cc
+
+commitId:3ec60ac9878de5d0317ad38fc545080a4bfaa74f
+date:2012-07-04_09:28:33
+subject:Mark ARMv4 as not supporting unaligned accesses (not just ARMv5 and ARMv6); apparently Debian still targets these by default, giving us segfaults on armel.
+author:snappy.mirrorbot@gmail.com
+
+2	0	snappy-stubs-internal.h
+
+commitId:be80d6f74f9d82220e952a54f3f129aae1f13f95
+date:2012-05-22_09:46:05
+subject:Fix public bug #62: Remove an extraneous comma at the end of an enum list, causing compile errors when embedded in Mozilla on OpenBSD.
+author:snappy.mirrorbot@gmail.com
+
+1	1	snappy-c.h
+
+commitId:8b95464146dddab1c7068f879162db9a885cdafe
+date:2012-05-22_09:32:50
+subject:Snappy library no longer depends on iostream.
+author:snappy.mirrorbot@gmail.com
+
+2	2	snappy-internal.h
+0	82	snappy-stubs-internal.h
+62	0	snappy-test.h
+41	33	snappy.cc
+
+commitId:fc723b212d6972af7051261754770b3f70a7dc03
+date:2012-02-24_15:46:37
+subject:Release Snappy 1.0.5.
+author:snappy.mirrorbot@gmail.com
+
+419	3	ChangeLog
+31	0	NEWS
+2	2	configure.ac
+
+commitId:dc63e0ad9693e13390ba31b00d92ecccaf7605c3
+date:2012-02-23_17:00:36
+subject:For 32-bit platforms, do not try to accelerate multiple neighboring 32-bit loads with a 64-bit load during compression (it's not a win).
+author:snappy.mirrorbot@gmail.com
+
+37	4	snappy.cc
+
+commitId:f8829ea39d51432ba4e6a26ddaec57acea779f4c
+date:2012-02-21_17:02:17
+subject:Enable the use of unaligned loads and stores for ARM-based architectures where they are available (ARMv7 and higher). This gives a significant speed boost on ARM, both for compression and decompression. It should not affect x86 at all.
+author:snappy.mirrorbot@gmail.com
+
+57	0	snappy-stubs-internal.h
+8	8	snappy.cc
+
+commitId:f2e184f638bdc7905f26c24faaf10fc0f5d33403
+date:2012-02-11_22:11:22
+subject:Lower the size allocated in the "corrupted input" unit test from 256 MB to 2 MB. This fixes issues with running the unit test on platforms with little RAM (e.g. some ARM boards).
+author:snappy.mirrorbot@gmail.com
+
+8	6	snappy_unittest.cc
+
+commitId:e750dc0f054ba74b0ce76dd2013e6728cc7a41c5
+date:2012-01-08_17:55:48
+subject:Minor refactoring to accomodate changes in Google's internal code tree.
+author:snappy.mirrorbot@gmail.com
+
+0	1	snappy-sinksource.cc
+1	0	snappy-sinksource.h
+11	2	snappy.cc
+
+commitId:d9068ee301bdf893a4d8cb7c6518eacc44c4c1f2
+date:2012-01-04_13:10:46
+subject:Fix public issue r57: Fix most warnings with -Wall, mostly signed/unsigned warnings. There are still some in the unit test, but the main .cc file should be clean. We haven't enabled -Wall for the default build, since the unit test is still not clean.
+author:snappy.mirrorbot@gmail.com
+
+2	3	snappy-stubs-internal.h
+0	2	snappy-test.cc
+1	1	snappy-test.h
+25	26	snappy.cc
+2	2	snappy.h
+2	2	snappy_unittest.cc
+
+commitId:0755c815197dacc77d8971ae917c86d7aa96bf8e
+date:2012-01-04_10:46:39
+subject:Add a framing format description. We do not have any implementation of this at the current point, but there seems to be enough of a general interest in the topic (cf. public bug #34).
+author:snappy.mirrorbot@gmail.com
+
+1	1	Makefile.am
+124	0	framing_format.txt
+ create mode 100644 framing_format.txt
+
+commitId:d7eb2dc4133794b62cba691f9be40d1549bc32e2
+date:2011-12-05_21:27:26
+subject:Speed up decompression by moving the refill check to the end of the loop.
+author:snappy.mirrorbot@gmail.com
+
+18	6	snappy.cc
+
+commitId:5ed51ce15fc4ff8d2f7235704eb6b0c3f762fb88
+date:2011-11-23_11:14:17
+subject:Speed up decompression by making the fast path for literals faster.
+author:snappy.mirrorbot@gmail.com
+
+50	22	snappy.cc
+
+commitId:0c1b9c3904430f5b399bd057d76de4bc36b7a123
+date:2011-11-08_14:46:39
+subject:Fix public issue #53: Update the README to the API we actually open-sourced with.
+author:snappy.mirrorbot@gmail.com
+
+2	2	README
+
+commitId:b61134bc0a6a904b41522b4e5c9e80874c730cef
+date:2011-10-05_12:27:12
+subject:In the format description, use a clearer example to emphasize that varints are stored in little-endian. Patch from Christian von Roques.
+author:snappy.mirrorbot@gmail.com
+
+3	3	format_description.txt
+
+commitId:21a2e4f55758e759302cd84ad0f3580affcba7d9
+date:2011-09-15_19:34:06
+subject:Release Snappy 1.0.4.
+author:snappy.mirrorbot@gmail.com
+
+168	0	ChangeLog
+12	0	NEWS
+2	2	configure.ac
+
+commitId:e2e303286813c759c5b1cdb46dad63c494f0a061
+date:2011-09-15_09:50:05
+subject:Fix public issue #50: Include generic byteswap macros. Also include Solaris 10 and FreeBSD versions.
+author:snappy.mirrorbot@gmail.com
+
+1	1	configure.ac
+39	1	snappy-stubs-internal.h
+
+commitId:593002da3c051f4721312869f816b41485bad3b7
+date:2011-08-10_18:57:27
+subject:Partially fix public issue 50: Remove an extra comma from the end of some enum declarations, as it seems the Sun compiler does not like it.
+author:snappy.mirrorbot@gmail.com
+
+2	2	snappy_unittest.cc
+
+commitId:f1063a5dc43891eed37f0586bfea57b84dddd756
+date:2011-08-10_18:44:16
+subject:Use the right #ifdef test for sys/mman.h.
+author:snappy.mirrorbot@gmail.com
+
+1	1	snappy-stubs-internal.h
+
+commitId:41c827a2fa9ce048202d941187f211180feadde4
+date:2011-08-10_01:22:09
+subject:Fix public issue #47: Small comment cleanups in the unit test.
+author:snappy.mirrorbot@gmail.com
+
+2	2	snappy_unittest.cc
+
+commitId:59aeffa6049b5c2a3a467e7602c1f93630b870e7
+date:2011-08-10_01:14:43
+subject:Fix public issue #46: Format description said "3-byte offset" instead of "4-byte offset" for the longest copies.
+author:snappy.mirrorbot@gmail.com
+
+3	3	format_description.txt
+
+commitId:57e7cd72559cb022ef32856f2252a4c4585e562e
+date:2011-06-28_11:40:25
+subject:Fix public issue #44: Make the definition and declaration of CompressFragment identical, even regarding cv-qualifiers.
+author:snappy.mirrorbot@gmail.com
+
+2	2	snappy.cc
+
+commitId:13c4a449a8ea22139c9aa441e8024eebc9dbdf6e
+date:2011-06-04_10:19:05
+subject:Correct an inaccuracy in the Snappy format description. (I stumbled into this when changing the way we decompress literals.)
+author:snappy.mirrorbot@gmail.com
+
+1	1	format_description.txt
+
+commitId:f5406737403119e1483a71d2084d17728663a114
+date:2011-06-03_20:53:06
+subject:Speed up decompression by removing a fast-path attempt.
+author:snappy.mirrorbot@gmail.com
+
+1	2	snappy.cc
+
+commitId:197f3ee9f9397e98c9abf07f9da875fbcb725dba
+date:2011-06-03_20:47:14
+subject:Speed up decompression by not needing a lookup table for literal items.
+author:snappy.mirrorbot@gmail.com
+
+15	5	snappy.cc
+
+commitId:8efa2639e885ac467e7b11c662975c5844019fb9
+date:2011-06-02_22:57:41
+subject:Release Snappy 1.0.3.
+author:snappy.mirrorbot@gmail.com
+
+162	0	ChangeLog
+15	0	NEWS
+2	2	configure.ac
+
+commitId:2e12124bd87f39296709decc65195fa5bfced538
+date:2011-06-02_18:06:54
+subject:Remove an unneeded goto in the decompressor; it turns out that the state of ip_ after decompression (or attempted decompresion) is completely irrelevant, so we don't need the trailer.
+author:snappy.mirrorbot@gmail.com
+
+4	7	snappy.cc
+
+commitId:c266bbf32103f8ed4a83e2272ed3d8828d5b8b34
+date:2011-06-02_17:59:40
+subject:Speed up decompression by caching ip_.
+author:snappy.mirrorbot@gmail.com
+
+45	36	snappy.cc
+
+commitId:d0ee043bc50c62c5b5ff3da044f0b5567257407d
+date:2011-05-17_08:48:25
+subject:Fix the numbering of the headlines in the Snappy format description.
+author:snappy.mirrorbot@gmail.com
+
+4	4	format_description.txt
+
+commitId:6c7053871fbdb459c9c14287a138d7f82d6d84a1
+date:2011-05-16_08:59:18
+subject:Fix public issue #32: Add compressed format documentation for Snappy. This text is new, but an earlier version from Zeev Tarantov was used as reference.
+author:snappy.mirrorbot@gmail.com
+
+1	1	Makefile.am
+110	0	format_description.txt
+ create mode 100644 format_description.txt
+
+commitId:a1f9f9973d127992f341d442969c86fd9a0847c9
+date:2011-05-09_21:29:02
+subject:Fix public issue #39: Pick out the median runs based on CPU time, not real time. Also, use nth_element instead of sort, since we only need one element.
+author:snappy.mirrorbot@gmail.com
+
+5	2	snappy-test.cc
+
+commitId:f7b105683c074cdf233740089e245e43f63e7e55
+date:2011-05-09_21:28:45
+subject:Fix public issue #38: Make the microbenchmark framework handle properly cases where gettimeofday() can stand return the same result twice (as sometimes on GNU/Hurd) or go backwards (as when the user adjusts the clock). We avoid a division-by-zero, and put a lower bound on the number of iterations -- the same amount as we use to calibrate.
+author:snappy.mirrorbot@gmail.com
+
+7	2	snappy-test.cc
+
+commitId:d8d481427a05b88cdb0810c29bf400153595c423
+date:2011-05-03_23:22:52
+subject:Fix public issue #37: Only link snappy_unittest against -lz and other autodetected libraries, not libsnappy.so (which doesn't need any such dependency).
+author:snappy.mirrorbot@gmail.com
+
+1	1	Makefile.am
+19	5	configure.ac
+
+commitId:bcecf195c0aeb2c98144d3d54b4d8d228774f50d
+date:2011-05-03_23:22:33
+subject:Release Snappy 1.0.2, to get the license change and various other fixes into a release.
+author:snappy.mirrorbot@gmail.com
+
+222	0	ChangeLog
+14	0	NEWS
+2	2	configure.ac
+
+commitId:84d9f642025cda672dda0d94a8008f094500aaa6
+date:2011-04-26_12:34:55
+subject:Fix public issue #30: Stop using gettimeofday() altogether on Win32, as MSVC doesn't include it. Replace with QueryPerformanceCounter(), which is monotonic and probably reasonably high-resolution. (Some machines have traditionally had bugs in QPC, but they should be relatively rare these days, and there's really no much better alternative that I know of.)
+author:snappy.mirrorbot@gmail.com
+
+21	9	snappy-test.cc
+24	0	snappy-test.h
+
+commitId:3d8e71df8d30f980d71d4c784ebfc5ff62d5b0cb
+date:2011-04-26_12:34:37
+subject:Fix public issue #31: Don't reset PATH in autogen.sh; instead, do the trickery we need for our own build system internally.
+author:snappy.mirrorbot@gmail.com
+
+0	1	autogen.sh
+
+commitId:73987351de54c88e2fc3f5dcdeceb47708df3585
+date:2011-04-15_22:55:56
+subject:When including <windows.h>, define WIN32_LEAN_AND_MEAN first, so we won't pull in macro definitions of things like min() and max(), which can conflict with <algorithm>.
+author:snappy.mirrorbot@gmail.com
+
+1	0	snappy-test.cc
+
+commitId:fb7e0eade471a20b009720a84fea0af1552791d5
+date:2011-04-11_09:07:01
+subject:Fix public issue #29: Write CPU timing code for Windows, based on GetProcessTimes() instead of getursage().
+author:snappy.mirrorbot@gmail.com
+
+1	1	configure.ac
+36	3	snappy-test.cc
+3	0	snappy-test.h
+
+commitId:c67fa0c755a329000da5546fff79089d62ac2f82
+date:2011-04-08_09:51:53
+subject:Include C bindings of Snappy, contributed by Martin Gieseking.
+author:snappy.mirrorbot@gmail.com
+
+2	2	Makefile.am
+6	3	README
+90	0	snappy-c.cc
+138	0	snappy-c.h
+ create mode 100644 snappy-c.cc
+ create mode 100644 snappy-c.h
+
+commitId:56be85cb9ae06f2e92180ae2575bdd10c012ab73
+date:2011-04-07_16:36:43
+subject:Replace geo.protodata with a newer version.
+author:snappy.mirrorbot@gmail.com
+
+-	-	testdata/geo.protodata
+
+commitId:3dd93f3ec74df54a37f68bffabb058ac757bbe72
+date:2011-03-30_20:27:53
+subject:Fix public issue #27: Add HAVE_CONFIG_H tests around the config.h inclusion in snappy-stubs-internal.h, which eases compiling outside the automake/autoconf framework.
+author:snappy.mirrorbot@gmail.com
+
+4	1	snappy-stubs-internal.h
+
+commitId:f67bcaa61006da8b325a7ed9909a782590971815
+date:2011-03-30_20:27:39
+subject:Fix public issue #26: Take memory allocation and reallocation entirely out of the Measure() loop. This gives all algorithms a small speed boost, except Snappy which already didn't do reallocation (so the measurements were slightly biased in its favor).
+author:snappy.mirrorbot@gmail.com
+
+83	23	snappy_unittest.cc
+
+commitId:cc333c1c5cc4eabceceb9848ff3cac6c604ecbc6
+date:2011-03-30_20:25:09
+subject:Renamed "namespace zippy" to "namespace snappy" to reduce the differences from the opensource code.  Will make it easier in the future to mix-and-match third-party code that uses snappy with google code.
+author:snappy.mirrorbot@gmail.com
+
+7	7	snappy_unittest.cc
+
+commitId:f19fb07e6dc79d6857e37df572dba25ff30fc8f3
+date:2011-03-28_22:17:04
+subject:Put back the final few lines of what was truncated during the license header change.
+author:snappy.mirrorbot@gmail.com
+
+2	0	snappy-internal.h
+3	1	snappy.h
+
+commitId:7e8ca8f8315fc2ecb4eea19db695039ab2ca43a0
+date:2011-03-26_02:34:34
+subject:Change on 2011-03-25 19:18:00-07:00 by sesse
+author:snappy.mirrorbot@gmail.com
+
+23	11	snappy-internal.h
+23	9	snappy-sinksource.cc
+23	9	snappy-sinksource.h
+23	9	snappy.cc
+24	12	snappy.h
+24	9	snappy_unittest.cc
+
+commitId:b4bbc1041b35d844ec26fbae25f2864995361fd8
+date:2011-03-25_16:14:41
+subject:Change Snappy from the Apache 2.0 to a BSD-type license.
+author:snappy.mirrorbot@gmail.com
+
+28	202	COPYING
+2	2	README
+23	9	snappy-stubs-internal.cc
+23	9	snappy-stubs-internal.h
+23	9	snappy-stubs-public.h.in
+23	9	snappy-test.cc
+23	9	snappy-test.h
+
+commitId:c47640c510eb11cf8913edfa34f667bceb3a4401
+date:2011-03-25_00:39:01
+subject:Release Snappy 1.0.1, to soup up all the various small changes that have been made since release.
+author:snappy.mirrorbot@gmail.com
+
+248	2	ChangeLog
+14	0	NEWS
+2	2	configure.ac
+
+commitId:b1dc1f643eaff897a5ce135f525799b99687b118
+date:2011-03-24_19:15:54
+subject:Fix a microbenchmark crash on mingw32; seemingly %lld is not universally supported on Windows, and %I64d is recommended instead.
+author:snappy.mirrorbot@gmail.com
+
+6	1	snappy-test.cc
+
+commitId:98004ca9afc62a3279dfe9d9a359083f61db437f
+date:2011-03-24_19:15:27
+subject:Fix public issue #19: Fix unit test when Google Test is installed but the gflags package isn't (Google Test is not properly initialized).
+author:snappy.mirrorbot@gmail.com
+
+2	1	snappy-test.h
+
+commitId:444a6c5f72d6f8d8f7213a5bcc08b26606eb9934
+date:2011-03-24_19:13:57
+subject:Make the unit test work on systems without mmap(). This is required for, among others, Windows support. For Windows in specific, we could have used CreateFileMapping/MapViewOfFile, but this should at least get us a bit closer to compiling, and is of course also relevant for embedded systems with no MMU.
+author:snappy.mirrorbot@gmail.com
+
+9	4	snappy_unittest.cc
+
+commitId:2e182e9bb840737f9cd8817e859dc17a82f2c16b
+date:2011-03-24_19:12:27
+subject:Make the unit test work on systems without mmap(). This is required for, among others, Windows support. For Windows in specific, we could have used CreateFileMapping/MapViewOfFile, but this should at least get us a bit closer to compiling, and is of course also relevant for embedded systems with no MMU.
+author:snappy.mirrorbot@gmail.com
+
+1	1	configure.ac
+3	0	snappy-stubs-internal.h
+5	0	snappy-test.h
+
+commitId:48662cbb7f81533977334629790d346220084527
+date:2011-03-23_23:17:36
+subject:Fix public issue #12: Don't keep autogenerated auto* files in Subversion; it causes problems with others sending patches etc..
+author:snappy.mirrorbot@gmail.com
+
+0	230	INSTALL
+0	925	Makefile.in
+0	9076	aclocal.m4
+0	17991	autom4te.cache/output.0
+0	17987	autom4te.cache/output.1
+0	279	autom4te.cache/requests
+0	2567	autom4te.cache/traces.0
+0	697	autom4te.cache/traces.1
+0	99	compile
+0	1466	config.guess
+0	107	config.h.in
+0	1579	config.sub
+0	17987	configure
+0	530	depcomp
+0	323	install-sh
+0	8413	ltmain.sh
+0	7377	m4/libtool.m4
+0	368	m4/ltoptions.m4
+0	123	m4/ltsugar.m4
+0	23	m4/ltversion.m4
+0	92	m4/lt~obsolete.m4
+0	360	missing
+0	158	mkinstalldirs
+ delete mode 100644 INSTALL
+ delete mode 100644 Makefile.in
+ delete mode 100644 aclocal.m4
+ delete mode 100644 autom4te.cache/output.0
+ delete mode 100644 autom4te.cache/output.1
+ delete mode 100644 autom4te.cache/requests
+ delete mode 100644 autom4te.cache/traces.0
+ delete mode 100644 autom4te.cache/traces.1
+ delete mode 100755 compile
+ delete mode 100755 config.guess
+ delete mode 100644 config.h.in
+ delete mode 100755 config.sub
+ delete mode 100755 configure
+ delete mode 100755 depcomp
+ delete mode 100755 install-sh
+ delete mode 100755 ltmain.sh
+ delete mode 100644 m4/libtool.m4
+ delete mode 100644 m4/ltoptions.m4
+ delete mode 100644 m4/ltsugar.m4
+ delete mode 100644 m4/ltversion.m4
+ delete mode 100644 m4/lt~obsolete.m4
+ delete mode 100755 missing
+ delete mode 100755 mkinstalldirs
+
+commitId:9e4717a586149c9538b353400312bab5ab5458c4
+date:2011-03-23_17:50:49
+subject:Fix public issue tracker bug #3: Call AC_SUBST([LIBTOOL_DEPS]), or the rule to rebuild libtool in Makefile.am won't work.
+author:snappy.mirrorbot@gmail.com
+
+1	0	Makefile.in
+2	0	autom4te.cache/output.0
+2	0	autom4te.cache/output.1
+100	99	autom4te.cache/traces.0
+221	218	autom4te.cache/traces.1
+22	20	configure
+1	0	configure.ac
+
+commitId:519c822a34a91a0c0eb32d98e9686ee7d9cd6651
+date:2011-03-23_11:16:39
+subject:Fix public issue #10: Don't add GTEST_CPPFLAGS to snappy_unittest_CXXFLAGS; it's not needed (CPPFLAGS are always included when compiling).
+author:snappy.mirrorbot@gmail.com
+
+0	1	Makefile.am
+10	12	Makefile.in
+
+commitId:ea6b936378583cba730c33c8a53776edc1782208
+date:2011-03-23_11:16:18
+subject:Fix public issue #9: Add -Wall -Werror to automake flags. (This concerns automake itself, not the C++ compiler.)
+author:snappy.mirrorbot@gmail.com
+
+3	0	autom4te.cache/output.0
+3	0	autom4te.cache/output.1
+252	248	autom4te.cache/traces.0
+500	500	autom4te.cache/traces.1
+23	20	configure
+4	1	configure.ac
+
+commitId:e3ca06af253094b1c3a8eae508cd97accf077535
+date:2011-03-23_11:13:37
+subject:Fix a typo in the Snappy README file.
+author:snappy.mirrorbot@gmail.com
+
+1	1	README
+
+commitId:39d27bea23873abaa663e884261386b17b058f20
+date:2011-03-23_11:13:13
+subject:Fix public issue #6: Add a --with-gflags for disabling gflags autodetection and using a manually given setting (use/don't use) instead.
+author:snappy.mirrorbot@gmail.com
+
+27	4	autom4te.cache/output.0
+27	4	autom4te.cache/output.1
+43	42	autom4te.cache/traces.0
+95	95	autom4te.cache/traces.1
+47	24	configure
+16	3	configure.ac
+
+commitId:60add43d99c1c31aeecd895cb555ad6f6520608e
+date:2011-03-23_11:12:44
+subject:Fix public issue #5: Replace the EXTRA_LIBSNAPPY_LDFLAGS setup with something slightly more standard, that also doesn't leak libtool command-line into configure.ac.
+author:snappy.mirrorbot@gmail.com
+
+1	1	Makefile.am
+2	2	Makefile.in
+2	5	autom4te.cache/output.0
+2	5	autom4te.cache/output.1
+11	11	autom4te.cache/traces.0
+32	32	autom4te.cache/traces.1
+2	5	configure
+2	6	configure.ac
+
+commitId:a8dd1700879ad646106742aa0e9c3a48dc07b01d
+date:2011-03-23_11:12:22
+subject:Fix public issue #4: Properly quote all macro arguments in configure.ac.
+author:snappy.mirrorbot@gmail.com
+
+16	16	configure.ac
+
+commitId:79752dd7033658e28dc894de55012bdf2c9afca3
+date:2011-03-23_11:11:54
+subject:Fix public issue #7: Don't use internal variables named ac_*, as those belong to autoconf's namespace.
+author:snappy.mirrorbot@gmail.com
+
+6	6	autom4te.cache/output.0
+6	6	autom4te.cache/output.1
+6	6	configure
+6	6	configure.ac
+
+commitId:46e39fb20c297129494b969ac4ea64fcd04b4fa0
+date:2011-03-23_11:11:09
+subject:Add missing licensing headers to a few files. (Part 2/2.)
+author:snappy.mirrorbot@gmail.com
+
+12	0	snappy-stubs-public.h.in
+
+commitId:3e764216fc8edaafca480443b90e55c14eaae2c2
+date:2011-03-23_11:10:39
+subject:Add mising licensing headers to a few files. (Part 1/2.)
+author:snappy.mirrorbot@gmail.com
+
+12	0	snappy-sinksource.cc
+12	0	snappy-sinksource.h
+
+commitId:9a59f183c8ffec62dcdabd3499d0d515e44e4ef0
+date:2011-03-23_11:10:04
+subject:Use the correct license file for the Apache 2.0 license; spotted by Florian Weimer.
+author:snappy.mirrorbot@gmail.com
+
+202	28	COPYING
+
+commitId:28a64402392c791905d6e1384ea1b48a5cb0b281
+date:2011-03-18_17:14:15
+subject:Revision created by MOE tool push_codebase. MOE_MIGRATION=
+author:snappy.mirrorbot@gmail.com
+
+1	0	AUTHORS
+28	0	COPYING
+3	0	ChangeLog
+230	0	INSTALL
+24	0	Makefile.am
+926	0	Makefile.in
+3	0	NEWS
+132	0	README
+9076	0	aclocal.m4
+8	0	autogen.sh
+17966	0	autom4te.cache/output.0
+17962	0	autom4te.cache/output.1
+279	0	autom4te.cache/requests
+2561	0	autom4te.cache/traces.0
+694	0	autom4te.cache/traces.1
+99	0	compile
+1466	0	config.guess
+107	0	config.h.in
+1579	0	config.sub
+17962	0	configure
+99	0	configure.ac
+530	0	depcomp
+323	0	install-sh
+8413	0	ltmain.sh
+74	0	m4/gtest.m4
+7377	0	m4/libtool.m4
+368	0	m4/ltoptions.m4
+123	0	m4/ltsugar.m4
+23	0	m4/ltversion.m4
+92	0	m4/lt~obsolete.m4
+360	0	missing
+158	0	mkinstalldirs
+136	0	snappy-internal.h
+46	0	snappy-sinksource.cc
+110	0	snappy-sinksource.h
+28	0	snappy-stubs-internal.cc
+457	0	snappy-stubs-internal.h
+59	0	snappy-stubs-public.h.in
+523	0	snappy-test.cc
+458	0	snappy-test.h
+1001	0	snappy.cc
+141	0	snappy.h
+1073	0	snappy_unittest.cc
+3609	0	testdata/alice29.txt
+4122	0	testdata/asyoulik.txt
+-	-	testdata/baddata1.snappy
+-	-	testdata/baddata2.snappy
+-	-	testdata/baddata3.snappy
+645	0	testdata/cp.html
+431	0	testdata/fields.c
+-	-	testdata/geo.protodata
+94	0	testdata/grammar.lsp
+-	-	testdata/house.jpg
+1	0	testdata/html
+1	0	testdata/html_x_4
+-	-	testdata/kennedy.xls
+-	-	testdata/kppkn.gtb
+7519	0	testdata/lcet10.txt
+-	-	testdata/mapreduce-osdi-1.pdf
+10699	0	testdata/plrabn12.txt
+-	-	testdata/ptt5
+-	-	testdata/sum
+10000	0	testdata/urls.10K
+112	0	testdata/xargs.1
+ create mode 100644 AUTHORS
+ create mode 100644 COPYING
+ create mode 100644 ChangeLog
+ create mode 100644 INSTALL
+ create mode 100644 Makefile.am
+ create mode 100644 Makefile.in
+ create mode 100644 NEWS
+ create mode 100644 README
+ create mode 100644 aclocal.m4
+ create mode 100755 autogen.sh
+ create mode 100644 autom4te.cache/output.0
+ create mode 100644 autom4te.cache/output.1
+ create mode 100644 autom4te.cache/requests
+ create mode 100644 autom4te.cache/traces.0
+ create mode 100644 autom4te.cache/traces.1
+ create mode 100755 compile
+ create mode 100755 config.guess
+ create mode 100644 config.h.in
+ create mode 100755 config.sub
+ create mode 100755 configure
+ create mode 100644 configure.ac
+ create mode 100755 depcomp
+ create mode 100755 install-sh
+ create mode 100755 ltmain.sh
+ create mode 100644 m4/gtest.m4
+ create mode 100644 m4/libtool.m4
+ create mode 100644 m4/ltoptions.m4
+ create mode 100644 m4/ltsugar.m4
+ create mode 100644 m4/ltversion.m4
+ create mode 100644 m4/lt~obsolete.m4
+ create mode 100755 missing
+ create mode 100755 mkinstalldirs
+ create mode 100644 snappy-internal.h
+ create mode 100644 snappy-sinksource.cc
+ create mode 100644 snappy-sinksource.h
+ create mode 100644 snappy-stubs-internal.cc
+ create mode 100644 snappy-stubs-internal.h
+ create mode 100644 snappy-stubs-public.h.in
+ create mode 100644 snappy-test.cc
+ create mode 100644 snappy-test.h
+ create mode 100644 snappy.cc
+ create mode 100644 snappy.h
+ create mode 100644 snappy_unittest.cc
+ create mode 100644 testdata/alice29.txt
+ create mode 100644 testdata/asyoulik.txt
+ create mode 100644 testdata/baddata1.snappy
+ create mode 100644 testdata/baddata2.snappy
+ create mode 100644 testdata/baddata3.snappy
+ create mode 100644 testdata/cp.html
+ create mode 100644 testdata/fields.c
+ create mode 100644 testdata/geo.protodata
+ create mode 100644 testdata/grammar.lsp
+ create mode 100644 testdata/house.jpg
+ create mode 100644 testdata/html
+ create mode 100644 testdata/html_x_4
+ create mode 100644 testdata/kennedy.xls
+ create mode 100644 testdata/kppkn.gtb
+ create mode 100644 testdata/lcet10.txt
+ create mode 100644 testdata/mapreduce-osdi-1.pdf
+ create mode 100644 testdata/plrabn12.txt
+ create mode 100644 testdata/ptt5
+ create mode 100644 testdata/sum
+ create mode 100644 testdata/urls.10K
+ create mode 100644 testdata/xargs.1
+
+commitId:7c3c6077b72b4ae2237267a20f640b55e9a90569
+date:2011-03-18_17:13:52
+subject:Create trunk directory.
+author:sesse@google.com
